@@ -1,0 +1,22 @@
+{
+  "name": "KAIROS | Faire du voyage une force du bien",
+  "short_name": "KAIROS",
+  "description": "KAIROS accompagne les tour-opérateurs malgaches à structurer une démarche de tourisme durable sincère, mobilisatrice, démontrable et reconnue internationalement.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0b08",
+  "theme_color": "#E0A62A",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

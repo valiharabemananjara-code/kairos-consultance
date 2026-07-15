@@ -1,0 +1,18 @@
+CHECKLIST KAIROS
+
+[ ] Dépôt GitHub créé
+[ ] Tous les fichiers importés à la racine
+[ ] GitHub Pages activé avec GitHub Actions
+[ ] Domaine kairos-consultance.com relié
+[ ] HTTPS activé
+[ ] Formulaire testé et FormSubmit activé
+[ ] Numéro WhatsApp testé
+[ ] Lien LinkedIn testé
+[ ] Propriété Google Analytics 4 créée
+[ ] Identifiant GA4 ajouté dans assets/js/analytics-config.js
+[ ] Projet Microsoft Clarity créé
+[ ] Identifiant Clarity ajouté dans assets/js/analytics-config.js
+[ ] Domaine validé dans Google Search Console
+[ ] Sitemap soumis : https://kairos-consultance.com/sitemap.xml
+[ ] Aperçu LinkedIn/WhatsApp vérifié
+[ ] Test mobile effectué

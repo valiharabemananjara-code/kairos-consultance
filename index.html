@@ -1,0 +1,3877 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="KAIROS accompagne les tour-opérateurs malgaches à structurer une démarche de tourisme durable sincère, mobilisatrice, démontrable et reconnue internationalement." name="description"/>
+<meta content="Valiha Andonimaraina, KAIROS" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#E0A62A" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="KAIROS | Faire du voyage une force du bien" property="og:title"/>
+<meta content="Transformation durable, certification Travelife, intelligence collective et stratégie de marque pour les acteurs du tourisme à Madagascar." property="og:description"/>
+<title>KAIROS | Faire du voyage une force du bien</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&amp;family=Fraunces:opsz,wght,SOFT,WONK@9..144,500..700,0..100,0..1&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --ink:#0b0b08;
+  --ink-soft:#15140f;
+  --ink-raised:#1d1b14;
+  --cream:#f7f1e5;
+  --cream-deep:#ede1c9;
+  --paper:#fffdf8;
+  --mustard:#E0A62A;
+  --mustard-bright:#F0B936;
+  --mustard-light:#F6D783;
+  --mustard-wash:#fbf0cf;
+  --forest:#153e2b;
+  --forest-bright:#236b49;
+  --sage:#dce9df;
+  --terracotta:#a95335;
+  --muted:#756c5e;
+  --line:rgba(11,11,8,.12);
+  --line-light:rgba(255,255,255,.11);
+  --shadow:0 36px 100px rgba(11,11,8,.17);
+  --shadow-soft:0 18px 48px rgba(11,11,8,.09);
+  --radius:28px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Manrope',sans-serif;
+  font-size:16px;
+  line-height:1.68;
+  overflow-x:hidden;
+}
+body.menu-open{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+::selection{background:var(--mustard);color:var(--ink)}
+[data-lang]{display:none}
+body.lang-fr [data-lang="fr"]{display:revert}
+body.lang-en [data-lang="en"]{display:revert}
+
+.skip-link{
+  position:fixed;left:1rem;top:-5rem;z-index:1500;
+  background:var(--paper);padding:.85rem 1rem;border-radius:999px;
+}
+.skip-link:focus{top:1rem}
+.scroll-progress{
+  position:fixed;inset:0 auto auto 0;width:0;height:3px;
+  background:linear-gradient(90deg,var(--mustard),var(--mustard-bright),var(--mustard-light));
+  z-index:1400;
+}
+.noise{
+  position:fixed;inset:0;pointer-events:none;z-index:1350;opacity:.023;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- Navigation ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1300;
+  min-height:82px;padding:.85rem 4vw;
+  display:flex;align-items:center;justify-content:space-between;gap:2rem;
+  transition:background .35s,border-color .35s,box-shadow .35s;
+}
+nav.scrolled{
+  background:rgba(11,11,8,.88);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 14px 50px rgba(0,0,0,.22);
+  backdrop-filter:blur(20px);
+}
+.brand{display:flex;align-items:center;text-decoration:none;min-width:220px}
+.brand img{height:55px;width:auto;max-width:255px;object-fit:contain}
+.nav-links{display:flex;align-items:center;gap:1.35rem}
+.nav-links>a{
+  position:relative;text-decoration:none;
+  color:rgba(255,255,255,.72);font-size:.78rem;font-weight:600;
+}
+.nav-links>a:not(.nav-cta)::after{
+  content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;
+  background:var(--mustard);transition:right .25s ease;
+}
+.nav-links>a:hover{color:var(--mustard-light)}
+.nav-links>a:hover::after{right:0}
+.nav-cta{
+  padding:.75rem 1.05rem;border-radius:999px;
+  background:var(--mustard);color:var(--ink)!important;font-weight:800!important;
+  box-shadow:0 8px 24px rgba(224,166,42,.18);
+}
+.nav-cta:hover{background:var(--mustard-bright);transform:translateY(-1px)}
+.lang-switch{
+  display:flex;gap:.22rem;padding:.25rem;
+  border:1px solid rgba(224,166,42,.38);
+  background:rgba(255,255,255,.025);border-radius:999px;
+}
+.lang-switch button{
+  border:0;background:transparent;color:rgba(255,255,255,.42);
+  border-radius:999px;padding:.36rem .56rem;font-size:.68rem;font-weight:800;
+}
+.lang-switch button.active{background:var(--mustard);color:var(--ink)}
+.menu-btn{display:none;border:0;background:none;color:#fff;font-size:1.35rem}
+.mobile-menu{
+  position:fixed;inset:0;z-index:1250;
+  display:grid;place-content:center;gap:1.45rem;text-align:center;
+  background:rgba(11,11,8,.985);
+  transform:translateY(-105%);
+  transition:transform .48s cubic-bezier(.22,1,.36,1);
+}
+.mobile-menu.open{transform:none}
+.mobile-menu a{
+  color:#fff;text-decoration:none;
+  font-family:'Fraunces',serif;font-size:2.15rem;line-height:1.1;
+}
+.mobile-lang{justify-self:center;display:flex}
+
+/* ---------- Shared ---------- */
+.section{position:relative;padding:8rem 5vw}
+.wrap{width:min(1190px,100%);margin:0 auto}
+.kicker{
+  display:inline-flex;align-items:center;gap:.75rem;
+  color:var(--mustard);font-size:.76rem;font-weight:800;
+  letter-spacing:.06em;margin-bottom:1rem;
+}
+.kicker::before{content:"";width:34px;height:2px;background:currentColor;border-radius:2px}
+.section-heading{
+  max-width:830px;margin-bottom:3.5rem;
+}
+.section-heading h2{
+  margin:.1rem 0 1.15rem;
+  font-family:'Fraunces',serif;font-size:clamp(2.8rem,5.2vw,5.7rem);
+  line-height:.98;letter-spacing:-.05em;font-weight:580;
+}
+.section-heading p{
+  margin:0;max-width:750px;color:var(--muted);
+  font-size:1.02rem;line-height:1.88;
+}
+.dark{background:var(--ink-soft);color:#fff}
+.dark .section-heading p{color:rgba(255,255,255,.62)}
+.reveal{
+  opacity:0;transform:translateY(34px);
+  transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1);
+}
+.reveal.in{opacity:1;transform:none}
+.reveal-left{
+  opacity:0;transform:translateX(-50px);
+  transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1);
+}
+.reveal-left.in{opacity:1;transform:none}
+.reveal-right{
+  opacity:0;transform:translateX(50px);
+  transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1);
+}
+.reveal-right.in{opacity:1;transform:none}
+.reveal-clip{
+  opacity:0;clip-path:inset(0 100% 0 0);
+  transition:opacity .7s ease,clip-path 1s cubic-bezier(.22,1,.36,1);
+}
+.reveal-clip.in{opacity:1;clip-path:inset(0 0 0 0)}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;min-height:100svh;overflow:hidden;
+  padding:10rem 5vw 5.5rem;color:#fff;
+  background:
+    radial-gradient(circle at 83% 22%,rgba(35,107,73,.35),transparent 29%),
+    radial-gradient(circle at 13% 10%,rgba(224,166,42,.23),transparent 24%),
+    linear-gradient(145deg,#080806 0%,#11110d 63%,#123221 100%);
+  display:grid;place-items:center;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(115deg,transparent 0 54%,rgba(255,255,255,.025) 54% 54.15%,transparent 54.15%),
+    linear-gradient(115deg,transparent 0 66%,rgba(224,166,42,.11) 66% 66.13%,transparent 66.13%);
+}
+.hero-orbit{
+  position:absolute;border:1px solid rgba(224,166,42,.18);border-radius:50%;
+  animation:orbit 20s linear infinite;
+}
+.hero-orbit.one{width:620px;height:620px;right:-160px;top:4%}
+.hero-orbit.two{width:360px;height:360px;left:-140px;bottom:-100px;animation-direction:reverse}
+@keyframes orbit{to{transform:rotate(360deg)}}
+.hero-grid{
+  position:relative;z-index:2;width:min(1190px,100%);
+  display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:5vw;
+}
+.hero-title{
+  margin:0 0 1.4rem;
+  font-family:'Fraunces',serif;font-size:clamp(3.6rem,6.5vw,7.2rem);
+  line-height:.9;letter-spacing:-.06em;font-weight:580;
+}
+.hero-title em{font-style:italic;color:var(--mustard-bright)}
+.hero-lead{
+  max-width:680px;margin:0 0 1.1rem;
+  color:rgba(255,255,255,.74);font-size:clamp(1rem,1.28vw,1.2rem);
+  line-height:1.86;
+}
+.hero-note{
+  max-width:650px;margin:1.25rem 0 0;padding-left:1.1rem;
+  border-left:2px solid var(--mustard);
+  color:rgba(255,255,255,.49);font-size:.92rem;line-height:1.8;
+}
+.hero-actions{display:flex;gap:.85rem;flex-wrap:wrap;margin-top:2rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  min-height:48px;padding:.88rem 1.2rem;border:0;border-radius:999px;
+  text-decoration:none;font-size:.83rem;font-weight:800;transition:.26s ease;
+}
+.btn-primary{background:var(--mustard);color:var(--ink)}
+.btn-primary:hover{background:var(--mustard-bright);transform:translateY(-2px);box-shadow:0 14px 32px rgba(224,166,42,.24)}
+.btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.18)}
+.btn-outline:hover{border-color:var(--mustard);color:var(--mustard-light)}
+.hero-visual{position:relative;min-height:630px;perspective:1200px}
+.hero-photo{
+  position:absolute;inset:0 0 0 auto;width:min(450px,95%);
+  overflow:hidden;border-radius:220px 220px 34px 34px;
+  border:1px solid rgba(224,166,42,.35);
+  box-shadow:0 48px 120px rgba(0,0,0,.54);
+  transform-style:preserve-3d;transition:transform .2s ease-out;
+}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 14%}
+.hero-photo::after{
+  content:"";position:absolute;inset:auto 0 0;height:42%;
+  background:linear-gradient(transparent,rgba(8,8,6,.88));
+}
+.identity-card{
+  position:absolute;left:-4%;bottom:7%;z-index:3;
+  width:min(360px,85%);padding:1.15rem 1.25rem;
+  background:rgba(255,253,248,.95);color:var(--ink);
+  border:1px solid rgba(255,255,255,.7);border-radius:20px;
+  box-shadow:var(--shadow);backdrop-filter:blur(16px);
+}
+.identity-primary{font-size:.9rem;font-weight:800;line-height:1.45}
+.identity-divider{color:var(--mustard);font-weight:800;padding:0 .25rem}
+.identity-secondary{margin-top:.5rem;color:var(--muted);font-size:.72rem;line-height:1.55}
+.scroll-cue{
+  position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);
+  color:rgba(255,255,255,.36);font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+}
+.scroll-cue::after{
+  content:"";display:block;width:1px;height:34px;margin:.65rem auto 0;
+  background:linear-gradient(var(--mustard),transparent);animation:cue 1.6s ease-in-out infinite;
+}
+@keyframes cue{50%{transform:translateY(7px);opacity:.4}}
+
+/* ---------- Marquee ---------- */
+.marquee{overflow:hidden;background:var(--mustard);border-block:1px solid rgba(11,11,8,.13)}
+.marquee-track{display:flex;width:max-content;animation:marquee 31s linear infinite}
+.marquee-item{padding:1rem 1.45rem;font-size:.71rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.marquee-item::after{content:"✦";margin-left:2.9rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ---------- Context / Story ---------- */
+.context-section{
+  background:
+    radial-gradient(circle at 10% 90%,rgba(224,166,42,.12),transparent 24%),
+    var(--ink-soft);
+}
+.context-layout{
+  display:grid;grid-template-columns:.88fr 1.12fr;gap:6vw;align-items:start;
+}
+.context-copy{position:sticky;top:8rem}
+.context-copy h2{
+  margin:.1rem 0 1.2rem;
+  font-family:'Fraunces',serif;font-size:clamp(2.9rem,5vw,5.5rem);
+  letter-spacing:-.05em;line-height:.98;font-weight:580;
+}
+.context-copy p{color:rgba(255,255,255,.62);line-height:1.9}
+.context-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:1rem;
+}
+.context-card{
+  position:relative;overflow:hidden;min-height:265px;padding:1.55rem;
+  border:1px solid rgba(255,255,255,.08);border-radius:24px;
+  background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.018));
+  transition:transform .35s,border-color .35s,background .35s;
+}
+.context-card:nth-child(2),.context-card:nth-child(3){transform:translateY(2.5rem)}
+.context-card::before{
+  content:"";position:absolute;width:190px;height:190px;border-radius:50%;
+  right:-100px;top:-100px;background:radial-gradient(circle,rgba(224,166,42,.2),transparent 68%);
+  transition:transform .5s;
+}
+.context-card:hover{
+  transform:translateY(-6px)!important;border-color:rgba(224,166,42,.48);
+  background:linear-gradient(145deg,rgba(224,166,42,.08),rgba(255,255,255,.025));
+}
+.context-card:hover::before{transform:scale(1.25)}
+.context-index{font-family:'Fraunces',serif;color:rgba(224,166,42,.4);font-size:3.5rem;line-height:1}
+.context-card h3{font-family:'Fraunces',serif;font-size:1.75rem;line-height:1.12;margin:1.2rem 0 .65rem}
+.context-card p{margin:0;color:rgba(255,255,255,.58);font-size:.9rem;line-height:1.75}
+
+/* ---------- Manifesto ---------- */
+.manifesto{
+  overflow:hidden;color:#fff;
+  background:
+    radial-gradient(circle at 90% 20%,rgba(224,166,42,.14),transparent 26%),
+    linear-gradient(130deg,#123d2a 0%,#1b5a3d 100%);
+}
+.manifesto::before{
+  content:"";position:absolute;right:-230px;top:-370px;width:760px;height:760px;
+  border:1px solid rgba(255,255,255,.09);border-radius:50%;
+}
+.manifesto::after{
+  content:"";position:absolute;right:-90px;top:-230px;width:480px;height:480px;
+  border:1px solid rgba(255,255,255,.07);border-radius:50%;
+}
+.manifesto-grid{
+  position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center;
+}
+.manifesto-quote{
+  margin:0;font-family:'Fraunces',serif;
+  font-size:clamp(2.7rem,4.7vw,5.2rem);line-height:1.02;letter-spacing:-.05em;font-weight:560;
+}
+.manifesto-quote em{color:var(--mustard-light)}
+.manifesto-talk p{color:rgba(255,255,255,.76);font-size:1.02rem;line-height:1.92;margin:0 0 1rem}
+.manifesto-talk strong{color:#fff}
+
+/* ---------- Approach ---------- */
+.approach-section{
+  background:
+    linear-gradient(180deg,var(--cream) 0%,#fffaf0 100%);
+}
+.approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.approach-card{
+  position:relative;overflow:hidden;min-height:380px;padding:1.7rem;
+  display:flex;flex-direction:column;justify-content:space-between;
+  background:var(--paper);border:1px solid rgba(11,11,8,.09);border-radius:var(--radius);
+  box-shadow:0 12px 35px rgba(11,11,8,.045);
+  transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s,border-color .4s;
+}
+.approach-card:hover{transform:translateY(-12px);box-shadow:var(--shadow);border-color:rgba(224,166,42,.4)}
+.approach-number{font-family:'Fraunces',serif;font-size:5rem;line-height:1;color:var(--mustard)}
+.approach-label{font-size:.72rem;font-weight:800;color:var(--forest);margin-bottom:.65rem}
+.approach-card h3{font-family:'Fraunces',serif;font-size:2rem;line-height:1.08;margin:0 0 .75rem}
+.approach-card p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.75}
+
+/* ---------- Plan ---------- */
+.plan-section{
+  background:
+    radial-gradient(circle at 82% 14%,rgba(224,166,42,.13),transparent 28%),
+    var(--ink);
+  color:#fff;
+}
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.plan-step{
+  position:relative;overflow:hidden;min-height:300px;padding:1.65rem;
+  border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);
+  background:rgba(255,255,255,.035);
+}
+.plan-step::after{
+  content:attr(data-step);position:absolute;right:-.2rem;top:-2rem;
+  font-family:'Fraunces',serif;font-size:10rem;line-height:1;color:rgba(224,166,42,.07);
+}
+.plan-step h3{position:relative;z-index:2;margin:5rem 0 .65rem;font-family:'Fraunces',serif;font-size:1.9rem}
+.plan-step p{position:relative;z-index:2;margin:0;color:rgba(255,255,255,.61);font-size:.9rem;line-height:1.76}
+
+/* ---------- Pricing ---------- */
+.pricing-section{
+  overflow:hidden;color:#fff;
+  background:
+    radial-gradient(circle at 10% 20%,rgba(224,166,42,.17),transparent 24%),
+    radial-gradient(circle at 90% 70%,rgba(35,107,73,.22),transparent 28%),
+    #0c0c09;
+}
+.pricing-wrap{width:min(1220px,100%);margin:auto}
+.pricing-heading{text-align:center;max-width:860px;margin:0 auto 3rem}
+.pricing-heading h2{
+  margin:.1rem 0 1rem;font-family:'Fraunces',serif;
+  font-size:clamp(2.8rem,5vw,5.4rem);line-height:.98;letter-spacing:-.05em;font-weight:580;
+}
+.pricing-heading p{color:rgba(255,255,255,.62);line-height:1.85}
+.offer-tabs{
+  position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:.35rem;
+  max-width:820px;margin:0 auto 2.5rem;padding:.38rem;
+  border:1px solid rgba(255,255,255,.09);border-radius:18px;background:rgba(255,255,255,.045);
+}
+.offer-tab{
+  border:0;border-radius:14px;background:transparent;color:rgba(255,255,255,.46);
+  padding:.9rem .8rem;font-size:.79rem;font-weight:800;transition:.25s;
+}
+.offer-tab.active{background:var(--mustard);color:var(--ink);box-shadow:0 12px 28px rgba(224,166,42,.2)}
+.offer-panel{display:none;animation:offerIn .5s cubic-bezier(.22,1,.36,1)}
+.offer-panel.active{display:grid;grid-template-columns:1.16fr .84fr;gap:1.25rem;align-items:start}
+.offer-panel.solo.active{grid-template-columns:1fr;max-width:900px;margin:0 auto}
+@keyframes offerIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.offer-card{
+  position:relative;overflow:hidden;border-radius:30px;
+  border:1px solid rgba(255,255,255,.1);
+  background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));
+  box-shadow:0 28px 90px rgba(0,0,0,.28);
+}
+.offer-card.featured{
+  background:linear-gradient(145deg,rgba(35,107,73,.34),rgba(19,61,43,.48));
+  border-color:rgba(90,175,126,.35);
+}
+.offer-card.catalyst{
+  background:linear-gradient(145deg,rgba(224,166,42,.14),rgba(110,74,24,.18));
+  border-color:rgba(224,166,42,.35);
+}
+.offer-glow{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(430px circle at var(--mx,50%) var(--my,20%),rgba(224,166,42,.16),transparent 50%);
+}
+.offer-header{position:relative;padding:2rem 2rem 1.5rem}
+.offer-badge{
+  position:absolute;right:1.5rem;top:1.5rem;padding:.38rem .75rem;border-radius:999px;
+  background:rgba(255,255,255,.1);color:rgba(255,255,255,.73);
+  font-size:.66rem;font-weight:800;
+}
+.offer-level{color:var(--mustard-light);font-size:.72rem;font-weight:800;margin-bottom:.65rem}
+.offer-name{font-family:'Fraunces',serif;font-size:2.45rem;line-height:1.05;margin:0 0 .65rem}
+.offer-tagline{max-width:650px;margin:0 0 1.5rem;color:rgba(255,255,255,.64);font-size:.91rem;line-height:1.75}
+.offer-price-label{font-size:.67rem;color:rgba(255,255,255,.42);font-weight:700}
+.offer-price{font-family:'Fraunces',serif;font-size:2.55rem;line-height:1.05;color:#fff;margin:.2rem 0}
+.offer-card.featured .offer-price{color:#b9efcf}
+.offer-card.catalyst .offer-price{color:var(--mustard-light)}
+.offer-price small{font-family:'Manrope',sans-serif;font-size:.85rem;color:rgba(255,255,255,.43)}
+.offer-duration{color:rgba(255,255,255,.43);font-size:.75rem}
+.offer-divider{height:1px;background:rgba(255,255,255,.08);margin:0 2rem}
+.offer-body{position:relative;padding:1.55rem 2rem 2rem}
+.offer-subtitle{font-size:.7rem;font-weight:800;color:rgba(255,255,255,.45);margin-bottom:.8rem}
+.offer-list{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:.72rem}
+.offer-list li{display:flex;gap:.7rem;color:rgba(255,255,255,.72);font-size:.86rem;line-height:1.55}
+.offer-list li::before{
+  content:"";width:17px;height:17px;flex:0 0 17px;margin-top:.08rem;
+  border:1px solid rgba(224,166,42,.5);border-radius:50%;
+  background:
+    linear-gradient(135deg,transparent 42%,var(--mustard) 42% 55%,transparent 55%) 4px 7px/7px 4px no-repeat;
+}
+.phase-chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.35rem}
+.phase-chip{
+  padding:.47rem .7rem;border-radius:999px;border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.04);color:rgba(255,255,255,.68);font-size:.68rem;
+}
+.offer-cta{width:100%;border:0;border-radius:14px;padding:1rem;font-weight:800;transition:.25s}
+.offer-cta.light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.17)}
+.offer-cta.light:hover{border-color:var(--mustard);color:var(--mustard-light)}
+.offer-cta.green{background:var(--forest-bright);color:#fff}
+.offer-cta.green:hover{background:#2d8059;transform:translateY(-2px)}
+.offer-cta.mustard{background:var(--mustard);color:var(--ink)}
+.offer-cta.mustard:hover{background:var(--mustard-bright);transform:translateY(-2px)}
+.offer-side{display:flex;flex-direction:column;gap:1rem}
+.side-card{
+  border:1px solid rgba(255,255,255,.08);border-radius:22px;
+  background:rgba(255,255,255,.035);padding:1.4rem;
+}
+.side-card.accent{border-color:rgba(224,166,42,.24);background:rgba(224,166,42,.07)}
+.side-title{font-size:.72rem;font-weight:800;color:var(--mustard-light);margin-bottom:.85rem}
+.side-list{list-style:none;padding:0;margin:0;display:grid;gap:.72rem}
+.side-list li{display:flex;gap:.7rem;color:rgba(255,255,255,.65);font-size:.83rem;line-height:1.55}
+.side-list li::before{content:"→";color:var(--mustard);font-weight:800}
+.side-card p{margin:0;color:rgba(255,255,255,.65);font-size:.84rem;line-height:1.72}
+.phase-timeline{display:grid;gap:.75rem}
+.phase-line{display:grid;grid-template-columns:28px 1fr;gap:.7rem}
+.phase-number{
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(35,107,73,.45);color:#b9efcf;font-size:.68rem;font-weight:800;
+}
+.phase-copy strong{display:block;font-size:.82rem;color:#fff;margin-bottom:.08rem}
+.phase-copy span{color:rgba(255,255,255,.49);font-size:.75rem;line-height:1.45}
+.expert-extra-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-bottom:1.4rem}
+.expert-extra{
+  padding:1rem;border-radius:15px;background:rgba(224,166,42,.065);
+  border:1px solid rgba(224,166,42,.16);
+}
+.expert-extra strong{display:block;color:var(--mustard-light);font-size:.75rem;margin-bottom:.35rem}
+.expert-extra p{margin:0;color:rgba(255,255,255,.62);font-size:.78rem;line-height:1.55}
+.catalyst-note{
+  margin:0 0 1.4rem;padding:1rem 1.1rem;border-left:3px solid var(--mustard);
+  background:rgba(255,255,255,.035);border-radius:0 14px 14px 0;
+  color:rgba(255,255,255,.66);font-size:.84rem;line-height:1.68;
+}
+
+/* ---------- Ecosystem ---------- */
+.ecosystem-section{
+  overflow:hidden;background:
+    radial-gradient(circle at 50% 50%,rgba(224,166,42,.12),transparent 24%),
+    linear-gradient(180deg,#fffaf0,var(--cream));
+}
+.ecosystem-intro{text-align:center;max-width:800px;margin:0 auto 4rem}
+.ecosystem-intro h2{
+  margin:.1rem 0 1rem;font-family:'Fraunces',serif;
+  font-size:clamp(2.8rem,5vw,5.3rem);line-height:.98;letter-spacing:-.05em;font-weight:580;
+}
+.ecosystem-intro p{color:var(--muted);line-height:1.85}
+.ecosystem-orbit{
+  position:relative;min-height:640px;max-width:1050px;margin:0 auto;
+}
+.ecosystem-orbit::before,.ecosystem-orbit::after{
+  content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  border:1px dashed rgba(224,166,42,.35);border-radius:50%;
+}
+.ecosystem-orbit::before{width:620px;height:620px;animation:spinSlow 34s linear infinite}
+.ecosystem-orbit::after{width:390px;height:390px;animation:spinSlow 24s linear infinite reverse}
+@keyframes spinSlow{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.eco-center{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;
+  width:205px;height:205px;border-radius:50%;display:grid;place-items:center;text-align:center;
+  background:var(--ink);color:#fff;border:5px solid var(--mustard-wash);
+  box-shadow:0 24px 70px rgba(11,11,8,.2);
+}
+.eco-center strong{font-family:'Fraunces',serif;font-size:2rem;color:var(--mustard-light)}
+.eco-center span{display:block;color:rgba(255,255,255,.6);font-size:.72rem;line-height:1.5;padding:0 1.2rem}
+.eco-node{
+  position:absolute;z-index:4;width:210px;min-height:145px;padding:1.15rem;
+  background:rgba(255,253,248,.96);border:1px solid rgba(11,11,8,.09);
+  border-radius:22px;box-shadow:var(--shadow-soft);
+  transition:transform .35s,box-shadow .35s,border-color .35s;
+}
+.eco-node:hover{transform:translateY(-8px) scale(1.02);box-shadow:var(--shadow);border-color:rgba(224,166,42,.45)}
+.eco-node::before{
+  content:"";display:block;width:36px;height:4px;border-radius:4px;background:var(--mustard);margin-bottom:.8rem;
+}
+.eco-node h3{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.1;margin:0 0 .45rem}
+.eco-node p{margin:0;color:var(--muted);font-size:.76rem;line-height:1.5}
+.eco-node.n1{left:4%;top:8%}
+.eco-node.n2{right:4%;top:8%}
+.eco-node.n3{left:0;top:43%}
+.eco-node.n4{right:0;top:43%}
+.eco-node.n5{left:13%;bottom:3%}
+.eco-node.n6{right:13%;bottom:3%}
+
+/* ---------- About / Editorial ---------- */
+.about-section{
+  overflow:hidden;background:var(--paper);
+}
+.about-grid{display:grid;grid-template-columns:.83fr 1.17fr;gap:6vw;align-items:center}
+.about-photo{position:relative}
+.about-photo-frame{
+  overflow:hidden;border-radius:32px 160px 32px 32px;
+  box-shadow:var(--shadow);border:1px solid rgba(224,166,42,.25);
+}
+.about-photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 13%}
+.about-identity{
+  position:absolute;left:-1.3rem;right:1.8rem;bottom:1.4rem;
+  padding:1rem 1.1rem;border-radius:18px;
+  background:rgba(11,11,8,.88);color:#fff;backdrop-filter:blur(14px);
+  box-shadow:0 18px 55px rgba(0,0,0,.25);
+}
+.about-identity .identity-primary{color:var(--mustard-light)}
+.about-identity .identity-secondary{color:rgba(255,255,255,.65)}
+.editorial h2{
+  margin:.1rem 0 1.15rem;font-family:'Fraunces',serif;
+  font-size:clamp(2.8rem,4.7vw,5rem);line-height:1;letter-spacing:-.05em;font-weight:580;
+}
+.editorial p{color:var(--muted);font-size:.98rem;line-height:1.9;margin:0 0 1rem}
+.editorial p.opening{
+  color:var(--ink);font-family:'Fraunces',serif;font-size:1.45rem;line-height:1.45;
+}
+.skills{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.skill{
+  padding:.58rem .78rem;border-radius:999px;
+  background:var(--sage);color:var(--forest);border:1px solid rgba(21,62,43,.12);
+  font-size:.72rem;font-weight:750;
+}
+
+/* ---------- Success ---------- */
+.success-section{
+  overflow:hidden;background:
+    linear-gradient(145deg,var(--mustard-wash),#fffaf0 52%,var(--sage));
+}
+.success-heading{max-width:980px;margin-bottom:3.5rem}
+.success-heading h2{
+  margin:.1rem 0 1rem;font-family:'Fraunces',serif;
+  font-size:clamp(2.9rem,5.2vw,5.6rem);line-height:.98;letter-spacing:-.05em;font-weight:580;
+}
+.success-heading p{max-width:760px;color:var(--muted);line-height:1.85}
+.success-grid{
+  display:grid;grid-template-columns:repeat(12,1fr);gap:1rem;
+}
+.success-card{
+  position:relative;overflow:hidden;min-height:230px;padding:1.5rem;
+  border-radius:26px;background:rgba(255,253,248,.84);
+  border:1px solid rgba(11,11,8,.08);box-shadow:0 10px 32px rgba(11,11,8,.05);
+  transition:transform .35s,box-shadow .35s,border-color .35s;
+}
+.success-card:hover{transform:translateY(-9px);box-shadow:var(--shadow-soft);border-color:rgba(224,166,42,.45)}
+.success-card::before{
+  content:"";position:absolute;width:170px;height:170px;border-radius:50%;
+  right:-90px;bottom:-90px;background:radial-gradient(circle,rgba(224,166,42,.22),transparent 67%);
+}
+.success-card h3{position:relative;margin:2.6rem 0 .55rem;font-family:'Fraunces',serif;font-size:1.65rem;line-height:1.08}
+.success-card p{position:relative;margin:0;color:var(--muted);font-size:.87rem;line-height:1.7}
+.success-card:nth-child(1),.success-card:nth-child(2){grid-column:span 6}
+.success-card:nth-child(n+3){grid-column:span 4}
+.success-symbol{position:absolute;top:1.25rem;left:1.4rem;color:var(--mustard);font-size:1.25rem}
+
+/* ---------- Contact ---------- */
+.contact-section{
+  overflow:hidden;color:#fff;
+  background:
+    radial-gradient(circle at 84% 18%,rgba(224,166,42,.2),transparent 28%),
+    radial-gradient(circle at 12% 82%,rgba(255,255,255,.06),transparent 22%),
+    linear-gradient(145deg,#113523,#1e5d3f);
+}
+.contact-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:5vw;align-items:start}
+.contact-copy{position:sticky;top:8rem}
+.contact-copy h2{
+  margin:.1rem 0 1.15rem;font-family:'Fraunces',serif;
+  font-size:clamp(3rem,5.3vw,5.8rem);line-height:.96;letter-spacing:-.055em;font-weight:580;
+}
+.contact-copy p{color:rgba(255,255,255,.7);line-height:1.88}
+.contact-assurance{
+  margin-top:1.5rem;padding:1rem 1.1rem;border-left:3px solid var(--mustard);
+  background:rgba(255,255,255,.05);border-radius:0 14px 14px 0;
+  color:rgba(255,255,255,.68);font-size:.83rem;line-height:1.7;
+}
+.form-card{
+  padding:1.4rem;border-radius:30px;background:rgba(255,253,248,.97);
+  box-shadow:0 34px 100px rgba(0,0,0,.25);color:var(--ink);
+}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.field{text-align:left}
+.field.full{grid-column:1/-1}
+.field label{
+  display:block;margin:0 0 .4rem .15rem;
+  color:#655b4d;font-size:.69rem;font-weight:800;
+}
+.field input,.field select,.field textarea{
+  width:100%;border:1px solid rgba(11,11,8,.13);border-radius:14px;
+  background:#fffdf9;color:var(--ink);padding:1rem;outline:none;transition:.2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  border-color:var(--mustard);box-shadow:0 0 0 4px rgba(224,166,42,.12);
+}
+.field textarea{min-height:140px;resize:vertical}
+.submit-row{grid-column:1/-1}
+.submit-row button{width:100%}
+.form-micro{margin:.9rem 0 0;text-align:center;color:var(--muted);font-size:.7rem;line-height:1.55}
+
+/* ---------- Footer ---------- */
+footer{background:#080806;color:rgba(255,255,255,.45);padding:2.2rem 5vw}
+.footer-inner{width:min(1190px,100%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.footer-logo img{height:48px;width:auto;max-width:220px}
+.footer-inner a{color:rgba(255,255,255,.68);text-decoration:none;font-size:.78rem}
+
+/* ---------- Responsive ---------- */
+@media(max-width:1020px){
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .hero-grid,.context-layout,.manifesto-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero{padding-top:9rem}
+  .hero-visual{min-height:560px;margin-top:2rem}
+  .hero-photo{left:50%;right:auto;transform:translateX(-50%)!important;width:min(440px,90%)}
+  .identity-card{left:7%}
+  .context-copy,.contact-copy{position:static}
+  .context-grid{margin-top:1rem}
+  .approach-grid,.plan-grid{grid-template-columns:1fr}
+  .offer-panel.active{grid-template-columns:1fr}
+  .ecosystem-orbit{min-height:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  .ecosystem-orbit::before,.ecosystem-orbit::after{display:none}
+  .eco-center{position:relative;left:auto;top:auto;transform:none;width:auto;height:auto;min-height:150px;border-radius:24px;grid-column:1/-1}
+  .eco-node{position:relative!important;inset:auto!important;width:auto;min-height:145px}
+  .success-card:nth-child(n){grid-column:span 6}
+}
+@media(max-width:680px){
+  nav{padding:.75rem 1rem;min-height:72px}
+  .brand img{height:45px;max-width:205px}
+  .section{padding:5.5rem 1.1rem}
+  .hero{padding:8.4rem 1.1rem 5rem}
+  .hero-title{font-size:clamp(3.1rem,15vw,4.7rem)}
+  .hero-visual{min-height:485px}
+  .identity-card{left:0;bottom:2%;width:92%}
+  .context-grid{grid-template-columns:1fr}
+  .context-card:nth-child(n){transform:none}
+  .offer-tabs{grid-template-columns:1fr}
+  .offer-header,.offer-body{padding-left:1.25rem;padding-right:1.25rem}
+  .offer-divider{margin:0 1.25rem}
+  .offer-badge{position:static;display:inline-block;margin-bottom:1rem}
+  .expert-extra-grid{grid-template-columns:1fr}
+  .ecosystem-orbit{grid-template-columns:1fr}
+  .eco-center{grid-column:auto}
+  .about-identity{left:.7rem;right:.7rem}
+  .success-grid{grid-template-columns:1fr}
+  .success-card:nth-child(n){grid-column:auto}
+  .form-grid{grid-template-columns:1fr}
+  .field.full,.submit-row{grid-column:auto}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+  .reveal,.reveal-left,.reveal-right,.reveal-clip{opacity:1;transform:none;clip-path:none}
+}
+</style>
+<style id="kairos-v3-overrides">
+/* The highlighted hero hook returns to the more lyrical serif of the previous version. */
+.hero-title em{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;
+  font-size:1.08em;
+  letter-spacing:-.035em;
+  line-height:.8;
+}
+
+/* Both areas of expertise carry the same visual importance. */
+.identity-card{width:min(410px,90%)}
+.identity-primary,
+.identity-secondary{
+  font-size:.84rem;
+  line-height:1.48;
+  letter-spacing:-.01em;
+}
+.identity-primary{font-weight:800}
+.identity-secondary{
+  margin-top:.55rem;
+  color:var(--muted);
+  font-weight:650;
+}
+.about-identity .identity-primary,
+.about-identity .identity-secondary{
+  font-size:.82rem;
+}
+.about-identity .identity-secondary{color:rgba(255,255,255,.72)}
+
+/* A more visible and tactile invitation to continue scrolling. */
+.scroll-cue{
+  bottom:1.15rem;
+  display:inline-flex;
+  align-items:center;
+  gap:.72rem;
+  padding:.55rem .85rem .55rem .58rem;
+  color:#fff;
+  text-decoration:none;
+  font-size:.7rem;
+  letter-spacing:.06em;
+  text-transform:none;
+  background:rgba(11,11,8,.58);
+  border:1px solid rgba(246,215,131,.42);
+  border-radius:999px;
+  box-shadow:0 16px 42px rgba(0,0,0,.28);
+  backdrop-filter:blur(14px);
+  transition:transform .25s,background .25s,border-color .25s;
+}
+.scroll-cue:hover{
+  transform:translateX(-50%) translateY(-4px);
+  background:rgba(224,166,42,.18);
+  border-color:var(--mustard);
+}
+.scroll-cue::after{display:none}
+.scroll-cue-icon{
+  width:31px;height:31px;border-radius:50%;
+  display:grid;place-items:center;
+  background:var(--mustard);
+  color:var(--ink);
+  font-size:1rem;
+  animation:scrollPulse 1.7s ease-in-out infinite;
+}
+@keyframes scrollPulse{
+  50%{transform:translateY(4px);box-shadow:0 0 0 7px rgba(224,166,42,.1)}
+}
+
+/* The context cards use cut editorial frames instead of generic rounded tiles. */
+.context-grid{gap:1.25rem}
+.context-card{
+  min-height:280px;
+  border:0;
+  border-radius:0;
+  clip-path:polygon(0 0,calc(100% - 32px) 0,100% 32px,100% 100%,24px 100%,0 calc(100% - 24px));
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.018));
+  box-shadow:
+    inset 5px 0 0 var(--mustard),
+    0 22px 60px rgba(0,0,0,.16);
+}
+.context-card::after{
+  content:"";
+  position:absolute;
+  top:16px;right:16px;
+  width:25px;height:25px;
+  border-top:1px solid rgba(246,215,131,.55);
+  border-right:1px solid rgba(246,215,131,.55);
+}
+.context-card:hover{
+  background:linear-gradient(145deg,rgba(224,166,42,.105),rgba(255,255,255,.025));
+  box-shadow:
+    inset 7px 0 0 var(--mustard-bright),
+    0 30px 78px rgba(0,0,0,.23);
+}
+
+/* The support journey becomes a luminous, editorial path and clearly separates itself from pricing. */
+.plan-section{
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 84% 8%,rgba(224,166,42,.2),transparent 24%),
+    linear-gradient(135deg,#f4ecd9 0%,#fffaf0 52%,#deebe1 100%);
+  border-top:1px solid rgba(11,11,8,.07);
+  border-bottom:8px solid var(--mustard);
+}
+.plan-section::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:7px;
+  height:42px;
+  background:linear-gradient(100deg,transparent 0 20%,rgba(224,166,42,.14) 20% 52%,transparent 52%);
+  clip-path:polygon(0 100%,100% 0,100% 100%);
+  pointer-events:none;
+}
+.plan-section .section-heading{max-width:940px}
+.plan-section .section-heading p{
+  max-width:790px;
+  margin:1.1rem 0 0;
+  color:var(--muted);
+  line-height:1.85;
+}
+.plan-grid{
+  position:relative;
+  gap:2rem;
+  padding-top:2.2rem;
+}
+.plan-grid::before{
+  content:"";
+  position:absolute;
+  left:6%;right:6%;top:2.25rem;
+  height:2px;
+  background:linear-gradient(90deg,var(--mustard),var(--forest-bright),var(--mustard));
+}
+.plan-step{
+  min-height:285px;
+  padding:3.4rem 1.35rem 1.5rem;
+  overflow:visible;
+  border:0;
+  border-radius:0;
+  background:transparent;
+}
+.plan-step::after{display:none}
+.plan-step::before{
+  content:"";
+  position:absolute;
+  top:-.35rem;left:1.3rem;
+  width:18px;height:18px;border-radius:50%;
+  background:var(--mustard);
+  border:5px solid #fffaf0;
+  box-shadow:0 0 0 1px rgba(11,11,8,.12),0 8px 24px rgba(224,166,42,.32);
+}
+.plan-marker{
+  color:var(--forest);
+  font-family:'Fraunces',serif;
+  font-size:3.2rem;
+  line-height:1;
+  opacity:.28;
+}
+.plan-step h3{
+  margin:1.25rem 0 .7rem;
+  color:var(--ink);
+  font-size:1.8rem;
+}
+.plan-step p{color:var(--muted);font-size:.92rem}
+.plan-step:hover .plan-marker{opacity:.75;color:var(--mustard)}
+.plan-step:hover::before{transform:scale(1.2)}
+
+/* Pricing is presented like a premium editorial dossier, with cut corners and a structural spine. */
+.pricing-section{
+  background:
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px),
+    radial-gradient(circle at 10% 20%,rgba(224,166,42,.17),transparent 24%),
+    radial-gradient(circle at 90% 70%,rgba(35,107,73,.22),transparent 28%),
+    #0c0c09;
+  background-size:42px 42px,42px 42px,auto,auto,auto;
+}
+.offer-tabs{
+  border:0;
+  border-radius:0;
+  padding:0;
+  gap:0;
+  background:transparent;
+  border-bottom:1px solid rgba(255,255,255,.13);
+}
+.offer-tab{
+  border-radius:0;
+  padding:1rem;
+  border-left:1px solid rgba(255,255,255,.08);
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.offer-tab:last-child{border-right:1px solid rgba(255,255,255,.08)}
+.offer-tab.active{
+  clip-path:polygon(0 0,calc(100% - 17px) 0,100% 17px,100% 100%,0 100%);
+  box-shadow:none;
+}
+.offer-card{
+  border:0;
+  border-radius:0;
+  clip-path:polygon(0 0,calc(100% - 46px) 0,100% 46px,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%);
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.018));
+  box-shadow:0 34px 110px rgba(0,0,0,.34);
+}
+.offer-card::before{
+  content:"";
+  position:absolute;z-index:2;
+  left:0;top:0;bottom:0;width:7px;
+  background:linear-gradient(var(--mustard),var(--mustard-light));
+}
+.offer-card::after{
+  content:"";
+  position:absolute;z-index:2;
+  right:20px;top:20px;width:34px;height:34px;
+  border-top:1px solid rgba(246,215,131,.5);
+  border-right:1px solid rgba(246,215,131,.5);
+  pointer-events:none;
+}
+.offer-card.featured{
+  background:
+    linear-gradient(145deg,rgba(35,107,73,.42),rgba(13,45,31,.54));
+}
+.offer-card.catalyst{
+  background:
+    linear-gradient(145deg,rgba(224,166,42,.17),rgba(85,54,17,.22));
+}
+.offer-header,.offer-body{padding-left:2.35rem}
+.offer-badge{
+  border-radius:0;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+}
+.side-card{
+  border-radius:0;
+  clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);
+  border-left:4px solid rgba(224,166,42,.5);
+}
+.offer-cta{border-radius:0;clip-path:polygon(0 0,calc(100% - 15px) 0,100% 15px,100% 100%,0 100%)}
+
+/* The manifesto quote remains visibly independent from the motivational text. */
+.manifesto-quote{position:relative;padding-top:2.5rem}
+.manifesto-quote::before{
+  content:"“";
+  position:absolute;top:-2rem;left:-.25rem;
+  color:rgba(246,215,131,.26);
+  font-family:'Cormorant Garamond',serif;
+  font-size:8rem;
+  line-height:1;
+}
+
+/* A larger, properly centered ecosystem hub. */
+.eco-center{
+  width:260px;
+  height:260px;
+  padding:1.25rem;
+}
+.eco-center strong{font-size:2.35rem}
+.eco-center p{
+  display:none;
+  margin:.65rem 0 0;
+  padding:0 .45rem;
+  color:rgba(255,255,255,.72);
+  font-size:.72rem;
+  line-height:1.55;
+}
+body.lang-fr .eco-center p[data-lang="fr"],
+body.lang-en .eco-center p[data-lang="en"]{display:block}
+
+/* Eight outcomes now complete the composition without an empty final row. */
+.success-card:nth-child(1),.success-card:nth-child(2){grid-column:span 6}
+.success-card:nth-child(n+3){grid-column:span 4}
+
+@media(max-width:1020px){
+  .plan-grid::before{left:2%;right:2%}
+  .eco-center{width:auto;height:auto;min-height:180px}
+  .success-card:nth-child(n){grid-column:span 6}
+}
+@media(max-width:680px){
+  .identity-card{width:96%}
+  .identity-primary,.identity-secondary,
+  .about-identity .identity-primary,.about-identity .identity-secondary{font-size:.76rem}
+  .scroll-cue{bottom:.75rem;font-size:.63rem}
+  .plan-grid{gap:0;padding-top:0}
+  .plan-grid::before{display:none}
+  .plan-step{
+    padding:2.2rem .2rem 2.2rem 3.3rem;
+    min-height:auto;
+    border-left:2px solid rgba(224,166,42,.55);
+  }
+  .plan-step::before{
+    top:2.2rem;left:-.65rem;
+  }
+  .offer-header,.offer-body{padding-left:1.45rem;padding-right:1.2rem}
+  .success-card:nth-child(n){grid-column:auto}
+}
+</style>
+<style id="kairos-v4-overrides">
+.hero-title{
+  max-width:12.4ch;
+  font-size:clamp(3.15rem,5.55vw,5.65rem);
+  line-height:.92;
+}
+.hero-title em{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.18em;
+  font-weight:700;
+  letter-spacing:-.03em;
+}
+.identity-card{width:min(470px,94%)}
+.identity-primary,.identity-secondary{font-size:.83rem}
+.identity-secondary{font-weight:760;color:var(--ink-soft)}
+
+.global-glow{
+  position:fixed;
+  left:0;top:0;
+  width:520px;height:520px;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:40;
+  opacity:.24;
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle, rgba(224,166,42,.48) 0%, rgba(224,166,42,.18) 24%, rgba(224,166,42,0) 68%);
+  mix-blend-mode:soft-light;
+  filter:blur(22px);
+  transition:opacity .25s ease;
+}
+
+.context-grid{gap:1.45rem}
+.context-card{
+  border:none;
+  border-radius:28px;
+  clip-path:none;
+  padding:1.6rem 1.55rem 1.45rem;
+  background:
+    radial-gradient(circle at 100% 0, rgba(224,166,42,.14), transparent 28%),
+    linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.018));
+  box-shadow:
+    0 22px 55px rgba(0,0,0,.16),
+    inset 0 1px 0 rgba(255,255,255,.08);
+}
+.context-card:nth-child(odd){transform:rotate(.8deg)}
+.context-card:nth-child(even){transform:rotate(-.8deg)}
+.context-card:nth-child(2),.context-card:nth-child(3){transform:translateY(2.5rem) rotate(-.75deg)}
+.context-card::before{
+  content:"";
+  position:absolute;
+  left:-16px;top:28px;
+  width:32px;height:32px;border-radius:50%;
+  background:var(--ink-soft);
+  box-shadow: calc(100% + 0px) 165px 0 0 var(--ink-soft);
+}
+.context-card::after{
+  content:"";
+  position:absolute;
+  right:18px;top:16px;
+  width:44px;height:4px;border-radius:6px;
+  background:linear-gradient(90deg,var(--mustard),var(--mustard-bright));
+}
+.context-card:hover{
+  transform:translateY(-8px) rotate(0deg)!important;
+  background:
+    radial-gradient(circle at 100% 0, rgba(224,166,42,.22), transparent 29%),
+    linear-gradient(145deg, rgba(255,255,255,.11), rgba(255,255,255,.025));
+}
+
+.manifesto-grid{grid-template-columns:1.02fr .98fr}
+.manifesto-quote{
+  align-self:center;
+  max-width:580px;
+}
+.manifesto-quote em{color:var(--mustard-light)}
+.manifesto-quote .quote-soft{color:#fff}
+
+.offer-panel.active{gap:1.45rem}
+.offer-card,.side-card{
+  border-radius:26px 26px 26px 14px;
+}
+.offer-card{
+  overflow:visible;
+  isolation:isolate;
+  clip-path:none;
+  border:1px solid rgba(255,255,255,.08);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.03)),
+    linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.012));
+}
+.offer-card::before{
+  content:"";
+  position:absolute; z-index:-2;
+  inset:14px -14px -14px 14px;
+  border-radius:24px 24px 24px 14px;
+  background:rgba(255,255,255,.04);
+}
+.offer-card::after{
+  content:"";
+  position:absolute; z-index:-1;
+  inset:8px -8px -8px 8px;
+  border-radius:24px 24px 24px 14px;
+  background:rgba(224,166,42,.06);
+}
+.offer-card.featured::before{background:rgba(36,107,73,.16)}
+.offer-card.catalyst::before{background:rgba(224,166,42,.09)}
+.offer-header{
+  position:relative;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.offer-header::after{
+  content:"";
+  position:absolute;
+  left:2.35rem; right:2.35rem; bottom:-1px;
+  height:4px;
+  background:linear-gradient(90deg,var(--mustard),transparent 55%);
+}
+.offer-badge{
+  right:1.25rem;top:-.85rem;
+  padding:.5rem .8rem;
+  border-radius:999px;
+  clip-path:none;
+  background:rgba(11,11,8,.5);
+  border:1px solid rgba(255,255,255,.1);
+}
+.offer-level{
+  display:inline-flex;align-items:center;gap:.55rem;
+}
+.offer-level::before{
+  content:"";
+  width:32px;height:2px;background:var(--mustard);
+}
+.offer-divider{display:none}
+.offer-body{padding-top:1.4rem}
+.side-card{
+  border:1px solid rgba(255,255,255,.08);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+}
+.offer-cta{
+  border-radius:16px;
+  clip-path:none;
+  box-shadow:0 16px 34px rgba(0,0,0,.18);
+}
+
+.ecosystem-orbit{min-height:710px}
+.eco-center{
+  z-index:7;
+  width:286px;height:286px;
+  top:56%;
+  padding:1.4rem;
+  box-shadow:0 28px 80px rgba(11,11,8,.22);
+}
+.eco-center strong{
+  display:block;
+  margin-bottom:.7rem;
+  font-size:2.45rem;
+  line-height:1.02;
+}
+.eco-center p{
+  margin:0 auto;
+  max-width:200px;
+  color:rgba(255,255,255,.8);
+  font-size:.72rem;
+  line-height:1.6;
+}
+.eco-node{z-index:4}
+.eco-node.n1{left:6%;top:8%}
+.eco-node.n2{right:6%;top:8%}
+.eco-node.n3{left:3%;top:40%}
+.eco-node.n4{right:3%;top:40%}
+.eco-node.n5{left:15%;bottom:5%}
+.eco-node.n6{right:9%;bottom:4%}
+
+.contact-actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.4rem}
+.whatsapp-inline{
+  border-color:rgba(255,255,255,.28);
+  background:rgba(255,255,255,.05);
+}
+.whatsapp-inline:hover{border-color:#25D366;color:#fff;background:rgba(37,211,102,.12)}
+.wa-dot{
+  width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;
+  background:#25D366;color:#fff;font-size:.95rem;font-weight:800;
+}
+
+.whatsapp-float{
+  position:fixed;
+  right:20px;bottom:20px;
+  z-index:1250;
+  display:inline-flex;align-items:center;gap:.65rem;
+  padding:.8rem .95rem .8rem .8rem;
+  border-radius:999px;
+  background:#25D366;
+  color:#fff;text-decoration:none;font-weight:800;
+  box-shadow:0 22px 48px rgba(37,211,102,.28);
+  transition:transform .25s, box-shadow .25s, background .25s;
+}
+.whatsapp-float:hover{
+  transform:translateY(-4px);
+  box-shadow:0 28px 58px rgba(37,211,102,.34);
+  background:#1ebe5a;
+}
+.whatsapp-icon{
+  width:36px;height:36px;border-radius:50%;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.16);
+  font-size:1rem;
+}
+.whatsapp-label{font-size:.82rem;letter-spacing:.01em}
+
+@media(max-width:1020px){
+  .hero-title{max-width:11.8ch}
+  .context-card:nth-child(n){transform:none!important}
+  .offer-card::before,.offer-card::after{display:none}
+  .ecosystem-orbit{min-height:auto}
+  .eco-center{
+    top:auto;
+    width:auto;height:auto;min-height:190px;
+    padding:1.4rem 1rem;
+  }
+}
+@media(max-width:680px){
+  .hero-title{
+    max-width:none;
+    font-size:clamp(2.85rem,13vw,4.3rem);
+  }
+  .identity-card{width:96%}
+  .context-card{padding-left:1.35rem;padding-right:1.15rem}
+  .contact-actions{flex-direction:column;align-items:flex-start}
+  .whatsapp-float{
+    right:14px;bottom:14px;
+    padding:.75rem;
+  }
+  .whatsapp-label{display:none}
+}
+</style>
+<style id="kairos-v5-fixes">
+/* Ensure the big quote in the green section is visible and clearly occupies the left column. */
+.manifesto-grid{
+  grid-template-columns:1fr 1fr !important;
+  align-items:center !important;
+}
+.manifesto-quote{
+  display:block !important;
+  opacity:1 !important;
+  clip-path:none !important;
+  transform:none !important;
+  max-width:620px !important;
+  margin:0 !important;
+  font-family:'Fraunces',serif;
+  font-size:clamp(2.8rem,4.8vw,5.2rem) !important;
+  line-height:1.04 !important;
+  letter-spacing:-.045em;
+  color:#fff !important;
+}
+.manifesto-quote em{
+  color:var(--mustard-light) !important;
+  font-style:italic;
+}
+.manifesto-quote .quote-soft{
+  color:#fff !important;
+}
+.manifesto-talk{
+  align-self:center;
+}
+body.lang-fr .manifesto-quote[data-lang="fr"],
+body.lang-en .manifesto-quote[data-lang="en"]{
+  display:block !important;
+}
+body.lang-fr .manifesto-quote[data-lang="en"],
+body.lang-en .manifesto-quote[data-lang="fr"]{
+  display:none !important;
+}
+
+/* Truly center the KAIROS hub inside the expert orbit and move the surrounding cards away from it. */
+.ecosystem-orbit{
+  min-height:760px !important;
+}
+.eco-center{
+  left:50% !important;
+  top:50% !important;
+  transform:translate(-50%,-50%) !important;
+  width:300px !important;
+  height:300px !important;
+  padding:1.5rem !important;
+  z-index:10 !important;
+  background:#080806 !important;
+  text-align:center !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.eco-center > div{
+  width:100%;
+}
+.eco-center strong{
+  display:block;
+  text-align:center;
+}
+.eco-center p{
+  max-width:220px !important;
+  margin:.7rem auto 0 !important;
+  text-align:center;
+}
+.eco-node{
+  z-index:4 !important;
+}
+.eco-node.n1{left:5% !important; top:7% !important;}
+.eco-node.n2{right:5% !important; top:7% !important;}
+.eco-node.n3{left:2% !important; top:39% !important;}
+.eco-node.n4{right:2% !important; top:39% !important;}
+.eco-node.n5{left:10% !important; bottom:1% !important;}
+.eco-node.n6{right:3% !important; bottom:1% !important;}
+
+@media(max-width:1020px){
+  .manifesto-grid{
+    grid-template-columns:1fr !important;
+  }
+  .manifesto-quote{
+    max-width:none !important;
+    margin-bottom:2rem !important;
+  }
+  .ecosystem-orbit{
+    min-height:auto !important;
+  }
+  .eco-center{
+    position:relative !important;
+    left:auto !important;
+    top:auto !important;
+    transform:none !important;
+    width:auto !important;
+    height:auto !important;
+    min-height:190px !important;
+  }
+}
+</style>
+<style id="empco-brief-styles">
+.empco-trigger{
+  position:relative;
+  width:100%;
+  margin-top:1.65rem;
+  padding:1rem 1rem 1rem .85rem;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:.9rem;
+  color:#fff;
+  text-align:left;
+  border:1px solid rgba(224,166,42,.42);
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 100% 0,rgba(224,166,42,.2),transparent 36%),
+    rgba(255,255,255,.045);
+  box-shadow:0 18px 48px rgba(0,0,0,.16);
+  overflow:hidden;
+  transition:transform .28s,border-color .28s,background .28s,box-shadow .28s;
+}
+.empco-trigger::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:0;
+  background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.09) 47%,transparent 72%);
+  transform:translateX(-70%);
+  transition:opacity .25s,transform .55s;
+}
+.empco-trigger:hover{
+  transform:translateY(-5px);
+  border-color:var(--mustard-bright);
+  background:
+    radial-gradient(circle at 100% 0,rgba(224,166,42,.3),transparent 40%),
+    rgba(255,255,255,.065);
+  box-shadow:0 24px 64px rgba(0,0,0,.24);
+}
+.empco-trigger:hover::before{
+  opacity:1;
+  transform:translateX(70%);
+}
+.empco-trigger-date{
+  position:relative;
+  min-width:82px;
+  min-height:64px;
+  padding:.5rem;
+  display:grid;
+  place-items:center;
+  color:var(--ink);
+  background:var(--mustard);
+  border-radius:14px;
+  font-family:'Fraunces',serif;
+  font-size:.9rem;
+  font-weight:700;
+}
+.empco-trigger-copy{position:relative;display:grid;gap:.18rem}
+.empco-trigger-copy strong{
+  color:#fff;
+  font-family:'Fraunces',serif;
+  font-size:1.05rem;
+  line-height:1.2;
+}
+.empco-trigger-copy small{
+  color:rgba(255,255,255,.55);
+  font-size:.69rem;
+  line-height:1.48;
+}
+.empco-trigger-action{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:.4rem;
+  color:var(--mustard-light);
+  font-size:.68rem;
+  font-weight:800;
+  white-space:nowrap;
+}
+.empco-trigger-action b{
+  width:28px;height:28px;
+  display:grid;place-items:center;
+  border:1px solid rgba(224,166,42,.45);
+  border-radius:50%;
+}
+
+.empco-dialog{
+  position:fixed;
+  inset:0;
+  z-index:1600;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:2.2rem;
+}
+.empco-dialog.open{display:flex}
+.empco-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(5,5,3,.84);
+  backdrop-filter:blur(16px);
+  animation:empcoFade .3s ease;
+}
+.empco-panel{
+  position:relative;
+  z-index:1;
+  width:min(1120px,100%);
+  max-height:91vh;
+  overflow:auto;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:30px;
+  background:#f8f2e7;
+  color:var(--ink);
+  box-shadow:0 48px 150px rgba(0,0,0,.52);
+  animation:empcoRise .48s cubic-bezier(.22,1,.36,1);
+  scrollbar-width:thin;
+  scrollbar-color:var(--mustard) transparent;
+}
+@keyframes empcoFade{from{opacity:0}to{opacity:1}}
+@keyframes empcoRise{from{opacity:0;transform:translateY(30px) scale(.98)}to{opacity:1;transform:none}}
+.empco-close{
+  position:sticky;
+  float:right;
+  top:1rem;
+  right:1rem;
+  z-index:10;
+  width:43px;height:43px;
+  margin:1rem 1rem -54px 0;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:50%;
+  background:rgba(11,11,8,.72);
+  color:#fff;
+  font-size:1.45rem;
+  line-height:1;
+  backdrop-filter:blur(12px);
+}
+.empco-close:hover{background:var(--mustard);color:var(--ink)}
+.empco-hero{
+  position:relative;
+  overflow:hidden;
+  min-height:330px;
+  padding:3.2rem 3.4rem;
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:3rem;
+  color:#fff;
+  background:
+    radial-gradient(circle at 85% 18%,rgba(224,166,42,.28),transparent 28%),
+    radial-gradient(circle at 15% 90%,rgba(35,107,73,.34),transparent 34%),
+    #0b0b08;
+}
+.empco-hero::after{
+  content:"EU 2024/825";
+  position:absolute;
+  right:-1rem;
+  bottom:-2.8rem;
+  color:rgba(255,255,255,.035);
+  font-family:'Fraunces',serif;
+  font-size:7rem;
+  font-weight:700;
+}
+.empco-overline{
+  color:var(--mustard-light);
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+.empco-hero h2{
+  max-width:700px;
+  margin:.55rem 0 .9rem;
+  font-family:'Fraunces',serif;
+  font-size:clamp(2.4rem,4.6vw,4.6rem);
+  line-height:.95;
+  letter-spacing:-.045em;
+}
+.empco-hero p{
+  max-width:700px;
+  margin:0;
+  color:rgba(255,255,255,.66);
+  line-height:1.78;
+}
+.empco-date-seal{
+  position:relative;
+  z-index:2;
+  width:178px;height:178px;
+  flex:0 0 178px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(246,215,131,.55);
+  border-radius:50%;
+  background:rgba(224,166,42,.09);
+  box-shadow:inset 0 0 0 9px rgba(224,166,42,.06);
+  text-align:center;
+}
+.empco-date-seal span{
+  color:rgba(255,255,255,.57);
+  font-size:.67rem;
+  font-weight:800;
+}
+.empco-date-seal strong{
+  color:var(--mustard-light);
+  font-family:'Fraunces',serif;
+  font-size:4.4rem;
+  line-height:.86;
+}
+.empco-date-seal b{
+  color:#fff;
+  font-size:.73rem;
+  letter-spacing:.08em;
+}
+.empco-timeline{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  padding:2rem 3.4rem;
+  background:#efe3cc;
+}
+.empco-timeline::before{
+  content:"";
+  position:absolute;
+  left:16%;right:16%;
+  top:2.62rem;
+  height:2px;
+  background:linear-gradient(90deg,#aa9b83,var(--mustard),var(--forest-bright));
+}
+.empco-time{
+  position:relative;
+  z-index:1;
+  display:grid;
+  justify-items:center;
+  gap:.22rem;
+  text-align:center;
+}
+.empco-time-dot{
+  width:16px;height:16px;
+  margin-bottom:.3rem;
+  border-radius:50%;
+  background:#aa9b83;
+  border:4px solid #efe3cc;
+  box-shadow:0 0 0 1px rgba(11,11,8,.15);
+}
+.empco-time.active .empco-time-dot{background:var(--forest-bright)}
+.empco-time small{color:var(--muted);font-size:.66rem;font-weight:800}
+.empco-time strong{font-size:.76rem}
+.empco-section{padding:3.3rem 3.4rem;border-top:1px solid rgba(11,11,8,.08)}
+.empco-section-heading{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:1.1rem;
+  align-items:start;
+  max-width:850px;
+  margin-bottom:2rem;
+}
+.empco-section-heading>span{
+  width:44px;height:44px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:var(--mustard);
+  font-family:'Fraunces',serif;
+  font-weight:700;
+}
+.empco-section-heading h3{
+  margin:0 0 .35rem;
+  font-family:'Fraunces',serif;
+  font-size:2rem;
+  line-height:1.08;
+}
+.empco-section-heading p{margin:0;color:var(--muted);font-size:.87rem}
+.empco-rule-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1rem;
+}
+.empco-rule{
+  position:relative;
+  min-height:230px;
+  padding:1.35rem;
+  border:1px solid rgba(11,11,8,.09);
+  border-radius:22px;
+  background:#fffdf8;
+  box-shadow:0 12px 35px rgba(11,11,8,.05);
+}
+.empco-rule-icon{
+  width:34px;height:34px;
+  display:grid;place-items:center;
+  margin-bottom:1rem;
+  border-radius:50%;
+  background:#f6ded8;
+  color:#a53c2d;
+  font-weight:900;
+}
+.empco-rule h4{
+  margin:0 0 .55rem;
+  font-family:'Fraunces',serif;
+  font-size:1.25rem;
+  line-height:1.12;
+}
+.empco-rule p{margin:0;color:var(--muted);font-size:.79rem;line-height:1.65}
+.empco-tourism{background:#fffaf0}
+.empco-tourism-map{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:.8rem;
+}
+.empco-channel{
+  min-height:120px;
+  padding:1rem;
+  border-radius:19px;
+  color:#fff;
+  background:var(--forest);
+}
+.empco-channel span{
+  display:inline-block;
+  margin-bottom:1.3rem;
+  color:var(--mustard-light);
+  font-size:.64rem;
+  font-weight:900;
+  letter-spacing:.1em;
+}
+.empco-channel strong{display:block;font-size:.78rem;line-height:1.4}
+.empco-example{
+  margin-top:1rem;
+  padding:1.25rem 1.4rem;
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  gap:1.2rem;
+  border:1px solid rgba(224,166,42,.3);
+  border-radius:20px;
+  background:var(--mustard-wash);
+}
+.empco-example div{display:grid;gap:.3rem}
+.empco-example small{color:var(--muted);font-size:.6rem;font-weight:900}
+.empco-example strong{font-family:'Fraunces',serif;font-size:1.15rem;line-height:1.15}
+.empco-example>span{color:var(--mustard);font-size:1.6rem}
+.empco-impact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1rem;
+}
+.empco-impact-grid article{
+  padding:1.3rem;
+  border-left:4px solid var(--mustard);
+  background:#fffdf8;
+  box-shadow:0 12px 35px rgba(11,11,8,.05);
+}
+.empco-impact-grid b{
+  display:block;
+  margin-bottom:.8rem;
+  color:rgba(224,166,42,.45);
+  font-family:'Fraunces',serif;
+  font-size:3rem;
+  line-height:1;
+}
+.empco-impact-grid h4{
+  margin:0 0 .55rem;
+  font-family:'Fraunces',serif;
+  font-size:1.2rem;
+  line-height:1.15;
+}
+.empco-impact-grid p{margin:0;color:var(--muted);font-size:.78rem;line-height:1.65}
+.empco-footer{
+  padding:2.5rem 3.4rem 3rem;
+  color:#fff;
+  background:var(--forest);
+}
+.empco-next-step{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:1rem;
+  max-width:850px;
+  margin-bottom:1.7rem;
+}
+.empco-next-icon{
+  width:44px;height:44px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:var(--mustard);
+  color:var(--ink);
+  font-weight:900;
+}
+.empco-next-step strong{display:block;margin-bottom:.3rem;font-family:'Fraunces',serif;font-size:1.35rem}
+.empco-next-step p{margin:0;color:rgba(255,255,255,.67);font-size:.83rem;line-height:1.65}
+.empco-footer-actions{
+  display:flex;
+  align-items:center;
+  gap:.8rem;
+  flex-wrap:wrap;
+}
+.empco-official-link{
+  padding:.85rem 1rem;
+  color:#fff;
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;
+  font-size:.75rem;
+  font-weight:800;
+}
+.empco-official-link:hover{border-color:var(--mustard);color:var(--mustard-light)}
+.empco-contact{font-size:.75rem}
+.empco-disclaimer{
+  margin:1.35rem 0 0;
+  max-width:850px;
+  color:rgba(255,255,255,.42);
+  font-size:.62rem;
+  line-height:1.55;
+}
+body.empco-open{overflow:hidden}
+
+@media(max-width:800px){
+  .empco-dialog{padding:.7rem}
+  .empco-panel{max-height:96vh;border-radius:22px}
+  .empco-hero{
+    padding:3.4rem 1.25rem 2rem;
+    grid-template-columns:1fr;
+    gap:1.5rem;
+  }
+  .empco-date-seal{width:140px;height:140px;justify-self:center}
+  .empco-date-seal strong{font-size:3.6rem}
+  .empco-timeline{padding:1.7rem 1rem}
+  .empco-timeline::before{left:17%;right:17%;top:2.32rem}
+  .empco-section,.empco-footer{padding:2.2rem 1.15rem}
+  .empco-rule-grid,.empco-impact-grid{grid-template-columns:1fr}
+  .empco-tourism-map{grid-template-columns:1fr 1fr}
+  .empco-example{grid-template-columns:1fr;text-align:left}
+  .empco-example>span{transform:rotate(90deg);justify-self:start}
+}
+@media(max-width:600px){
+  .empco-trigger{
+    grid-template-columns:auto 1fr;
+  }
+  .empco-trigger-action{
+    grid-column:1/-1;
+    justify-self:end;
+  }
+  .empco-trigger-date{min-width:70px}
+  .empco-tourism-map{grid-template-columns:1fr}
+  .empco-footer-actions{align-items:stretch}
+  .empco-official-link,.empco-contact{width:100%;justify-content:center;text-align:center}
+}
+</style>
+<style id="kairos-v7-social-links">
+/* WhatsApp remains visible, but without the luminous halo. */
+.whatsapp-float{
+  box-shadow:none !important;
+}
+.whatsapp-float:hover{
+  box-shadow:none !important;
+  transform:translateY(-2px);
+}
+.whatsapp-inline{
+  box-shadow:none !important;
+}
+.whatsapp-inline:hover{
+  box-shadow:none !important;
+}
+
+/* LinkedIn contact button. */
+.linkedin-inline{
+  border-color:rgba(255,255,255,.28);
+  background:rgba(255,255,255,.05);
+}
+.linkedin-inline:hover{
+  color:#fff;
+  border-color:#0A66C2;
+  background:rgba(10,102,194,.16);
+}
+.linkedin-dot{
+  width:28px;
+  height:28px;
+  border-radius:7px;
+  display:grid;
+  place-items:center;
+  background:#0A66C2;
+  color:#fff;
+  font-family:'Manrope',sans-serif;
+  font-size:.78rem;
+  font-weight:900;
+  line-height:1;
+}
+
+/* Footer social links. */
+.footer-contact-links{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+.footer-linkedin{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+}
+.footer-linkedin-mark{
+  width:25px;
+  height:25px;
+  display:grid;
+  place-items:center;
+  border-radius:6px;
+  background:#0A66C2;
+  color:#fff;
+  font-size:.68rem;
+  font-weight:900;
+}
+.footer-linkedin:hover{
+  color:#fff;
+}
+
+@media(max-width:680px){
+  .footer-contact-links{
+    justify-content:center;
+    flex-direction:column;
+  }
+}
+</style>
+<style id="kairos-v8-motion-system">
+/* =========================================================
+   KAIROS MOTION SYSTEM 2026
+   Rich, tactile, performant and respectful of reduced motion
+   ========================================================= */
+
+/* Page entry choreography */
+.motion-ready nav{
+  opacity:0;
+  transform:translateY(-22px);
+}
+.motion-ready.page-loaded nav{
+  opacity:1;
+  transform:none;
+  transition:
+    opacity .8s cubic-bezier(.22,1,.36,1),
+    transform .8s cubic-bezier(.22,1,.36,1),
+    background .35s,
+    border-color .35s,
+    box-shadow .35s;
+}
+.motion-ready .hero .kicker,
+.motion-ready .hero-title,
+.motion-ready .hero-lead,
+.motion-ready .hero-note,
+.motion-ready .hero-actions{
+  opacity:0;
+  transform:translateY(34px);
+}
+.motion-ready.page-loaded .hero .kicker{
+  animation:kairosIntro .85s .18s cubic-bezier(.22,1,.36,1) forwards;
+}
+.motion-ready.page-loaded .hero-title{
+  animation:kairosIntro .95s .3s cubic-bezier(.22,1,.36,1) forwards;
+}
+.motion-ready.page-loaded .hero-lead{
+  animation:kairosIntro .85s .46s cubic-bezier(.22,1,.36,1) forwards;
+}
+.motion-ready.page-loaded .hero-note{
+  animation:kairosIntro .85s .58s cubic-bezier(.22,1,.36,1) forwards;
+}
+.motion-ready.page-loaded .hero-actions{
+  animation:kairosIntro .85s .7s cubic-bezier(.22,1,.36,1) forwards;
+}
+.motion-ready .hero-visual{
+  opacity:0;
+  transform:translateX(45px) scale(.96);
+}
+.motion-ready.page-loaded .hero-visual{
+  animation:kairosVisualIn 1.15s .36s cubic-bezier(.22,1,.36,1) forwards;
+}
+@keyframes kairosIntro{
+  to{opacity:1;transform:none}
+}
+@keyframes kairosVisualIn{
+  to{opacity:1;transform:none}
+}
+
+/* Kinetic emphasis on the main hook */
+.hero-title em{
+  position:relative;
+  display:inline-block;
+  background:linear-gradient(
+    110deg,
+    var(--mustard-light) 0%,
+    #fff2bd 36%,
+    var(--mustard-bright) 58%,
+    var(--mustard-light) 100%
+  );
+  background-size:220% 100%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent !important;
+  animation:kairosTextGlow 6s ease-in-out infinite;
+}
+.hero-title em::after{
+  content:"";
+  position:absolute;
+  left:2%;right:0;bottom:-.04em;
+  height:.07em;
+  border-radius:999px;
+  background:linear-gradient(90deg,transparent,var(--mustard-bright),transparent);
+  transform-origin:left;
+  animation:kairosUnderline 1.2s 1.2s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes kairosTextGlow{
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+@keyframes kairosUnderline{
+  from{transform:scaleX(0);opacity:0}
+  to{transform:scaleX(1);opacity:.9}
+}
+
+/* Hero portrait has a subtle living presence */
+.hero-photo{
+  animation:portraitBreath 7s ease-in-out infinite;
+}
+.identity-card{
+  animation:identityFloat 5.5s ease-in-out infinite;
+}
+@keyframes portraitBreath{
+  0%,100%{box-shadow:0 48px 120px rgba(0,0,0,.54)}
+  50%{box-shadow:0 58px 145px rgba(0,0,0,.68)}
+}
+@keyframes identityFloat{
+  0%,100%{translate:0 0}
+  50%{translate:0 -7px}
+}
+
+/* Animated ambient light in major sections */
+.context-section,
+.approach-section,
+.plan-section,
+.pricing-section,
+.ecosystem-section,
+.about-section,
+.success-section,
+.contact-section{
+  isolation:isolate;
+}
+.context-section::after,
+.approach-section::after,
+.pricing-section::after,
+.ecosystem-section::after,
+.success-section::after,
+.contact-section::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  pointer-events:none;
+  filter:blur(34px);
+  opacity:.12;
+  background:radial-gradient(circle,var(--mustard-bright),transparent 68%);
+  animation:ambientDrift 14s ease-in-out infinite alternate;
+}
+.context-section::after{left:-170px;bottom:6%}
+.approach-section::after{right:-180px;top:18%}
+.pricing-section::after{left:28%;top:9%;opacity:.08}
+.ecosystem-section::after{right:-150px;bottom:10%}
+.success-section::after{left:38%;top:5%}
+.contact-section::after{right:2%;bottom:-180px;opacity:.16}
+@keyframes ambientDrift{
+  0%{transform:translate3d(-18px,-12px,0) scale(.9)}
+  100%{transform:translate3d(30px,24px,0) scale(1.15)}
+}
+
+/* Scroll reveals become more cinematic */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-clip{
+  will-change:opacity,transform,clip-path;
+}
+.reveal{
+  transform:translateY(48px) scale(.985);
+}
+.reveal.in{
+  transform:none;
+}
+.reveal-left{
+  transform:translateX(-72px) rotate(-1deg);
+}
+.reveal-right{
+  transform:translateX(72px) rotate(1deg);
+}
+
+/* Automatic stagger for card collections */
+.context-card,
+.approach-card,
+.plan-step,
+.success-card,
+.eco-node,
+.empco-rule,
+.empco-impact-grid article{
+  transition-delay:calc(var(--stagger,0) * 70ms);
+}
+
+/* Section headings draw themselves into view */
+.section-heading h2,
+.context-copy h2,
+.pricing-heading h2,
+.ecosystem-intro h2,
+.editorial h2,
+.success-heading h2,
+.contact-copy h2{
+  position:relative;
+}
+.section-heading h2::after,
+.context-copy h2::after,
+.pricing-heading h2::after,
+.ecosystem-intro h2::after,
+.editorial h2::after,
+.success-heading h2::after,
+.contact-copy h2::after{
+  content:"";
+  display:block;
+  width:min(130px,32%);
+  height:4px;
+  margin-top:.28em;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--mustard),var(--mustard-bright),transparent);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .9s .15s cubic-bezier(.22,1,.36,1);
+}
+.reveal.in h2::after,
+.reveal-left.in h2::after,
+.reveal-right.in h2::after,
+.section-heading:has(.in) h2::after{
+  transform:scaleX(1);
+}
+
+/* More tactile cards with animated border energy */
+.approach-card,
+.success-card,
+.eco-node,
+.empco-rule,
+.empco-impact-grid article{
+  position:relative;
+}
+.approach-card::after,
+.success-card::after,
+.eco-node::after,
+.empco-rule::after,
+.empco-impact-grid article::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(
+    130deg,
+    transparent 10%,
+    rgba(224,166,42,.62) 36%,
+    rgba(255,255,255,.25) 52%,
+    transparent 75%
+  );
+  background-size:240% 240%;
+  opacity:0;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  transition:opacity .3s;
+}
+.approach-card:hover::after,
+.success-card:hover::after,
+.eco-node:hover::after,
+.empco-rule:hover::after,
+.empco-impact-grid article:hover::after{
+  opacity:1;
+  animation:borderFlow 2.4s linear infinite;
+}
+@keyframes borderFlow{
+  to{background-position:200% 200%}
+}
+.approach-card>*,
+.success-card>*,
+.eco-node>*,
+.empco-rule>*,
+.empco-impact-grid article>*{
+  position:relative;
+  z-index:1;
+}
+
+/* Context cards feel like collectible editorial pieces */
+.context-card{
+  transform-origin:center;
+}
+.context-card:hover .context-index{
+  color:var(--mustard-light);
+  transform:translateY(-5px) rotate(-4deg);
+}
+.context-index{
+  transition:color .3s,transform .35s cubic-bezier(.22,1,.36,1);
+}
+.context-card h3{
+  transition:transform .3s,color .3s;
+}
+.context-card:hover h3{
+  transform:translateX(7px);
+  color:var(--mustard-light);
+}
+
+/* Approach numbers react with depth */
+.approach-number{
+  transition:
+    transform .5s cubic-bezier(.22,1,.36,1),
+    color .3s,
+    opacity .3s;
+}
+.approach-card:hover .approach-number{
+  transform:translate3d(8px,-10px,0) rotate(-5deg) scale(1.08);
+  color:var(--mustard-bright);
+}
+
+/* Guidance path pulses from one step to the next */
+.plan-marker{
+  animation:planNumberPulse 5.4s ease-in-out infinite;
+}
+.plan-step:nth-child(2) .plan-marker{animation-delay:1.8s}
+.plan-step:nth-child(3) .plan-marker{animation-delay:3.6s}
+@keyframes planNumberPulse{
+  0%,68%,100%{opacity:.28;transform:none}
+  78%{opacity:.9;transform:translateY(-5px) scale(1.08)}
+}
+.plan-step::before{
+  animation:pathPulse 3.2s ease-in-out infinite;
+}
+.plan-step:nth-child(2)::before{animation-delay:1s}
+.plan-step:nth-child(3)::before{animation-delay:2s}
+@keyframes pathPulse{
+  0%,100%{box-shadow:0 0 0 1px rgba(11,11,8,.12),0 8px 24px rgba(224,166,42,.22)}
+  50%{box-shadow:0 0 0 9px rgba(224,166,42,.1),0 12px 34px rgba(224,166,42,.38)}
+}
+
+/* Pricing tabs and dossier panels feel alive */
+.offer-tab{
+  position:relative;
+  overflow:hidden;
+}
+.offer-tab::after{
+  content:"";
+  position:absolute;
+  left:0;right:100%;bottom:0;
+  height:3px;
+  background:var(--mustard-bright);
+  transition:right .35s cubic-bezier(.22,1,.36,1);
+}
+.offer-tab:hover::after,
+.offer-tab.active::after{
+  right:0;
+}
+.offer-panel.active .offer-card{
+  animation:offerPanelArrival .62s cubic-bezier(.22,1,.36,1);
+}
+.offer-panel.active .offer-side{
+  animation:offerSideArrival .72s .08s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes offerPanelArrival{
+  from{opacity:0;transform:translateY(28px) scale(.985)}
+  to{opacity:1;transform:none}
+}
+@keyframes offerSideArrival{
+  from{opacity:0;transform:translateX(28px)}
+  to{opacity:1;transform:none}
+}
+.offer-price{
+  transition:letter-spacing .35s,color .35s;
+}
+.offer-card:hover .offer-price{
+  letter-spacing:.012em;
+  color:var(--mustard-light);
+}
+.phase-chip{
+  transition:transform .25s,background .25s,border-color .25s,color .25s;
+}
+.phase-chip:hover{
+  transform:translateY(-3px);
+  background:rgba(224,166,42,.12);
+  border-color:rgba(224,166,42,.5);
+  color:#fff;
+}
+
+/* The expert ecosystem gently orbits through floating nodes */
+.eco-node{
+  animation:expertFloat 6.8s ease-in-out infinite;
+}
+.eco-node.n2{animation-delay:.7s}
+.eco-node.n3{animation-delay:1.4s}
+.eco-node.n4{animation-delay:2.1s}
+.eco-node.n5{animation-delay:2.8s}
+.eco-node.n6{animation-delay:3.5s}
+.eco-node:hover{
+  animation-play-state:paused;
+}
+@keyframes expertFloat{
+  0%,100%{translate:0 0}
+  50%{translate:0 -8px}
+}
+.eco-center{
+  animation:hubPulse 6s ease-in-out infinite;
+}
+@keyframes hubPulse{
+  0%,100%{box-shadow:0 28px 80px rgba(11,11,8,.22),0 0 0 0 rgba(224,166,42,.08)}
+  50%{box-shadow:0 38px 100px rgba(11,11,8,.32),0 0 0 18px rgba(224,166,42,0)}
+}
+
+/* Success cards reveal meaning progressively */
+.success-symbol{
+  transition:transform .4s,color .3s;
+}
+.success-card:hover .success-symbol{
+  transform:rotate(90deg) scale(1.2);
+  color:var(--forest-bright);
+}
+.success-card h3{
+  transition:transform .32s cubic-bezier(.22,1,.36,1);
+}
+.success-card:hover h3{
+  transform:translateY(-4px);
+}
+
+/* Contact form: modern focus and completion feedback */
+.field{
+  position:relative;
+}
+.field::after{
+  content:"";
+  position:absolute;
+  left:0;right:100%;bottom:0;
+  height:2px;
+  background:linear-gradient(90deg,var(--mustard),var(--forest-bright));
+  border-radius:99px;
+  transition:right .35s cubic-bezier(.22,1,.36,1);
+}
+.field:focus-within::after{
+  right:0;
+}
+.field label{
+  transition:color .25s,transform .25s;
+}
+.field:focus-within label{
+  color:var(--forest);
+  transform:translateX(3px);
+}
+.form-card{
+  transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s;
+}
+.form-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 46px 120px rgba(0,0,0,.31);
+}
+
+/* Buttons respond physically to the pointer */
+.btn,
+.offer-cta,
+.empco-trigger,
+.nav-cta,
+.linkedin-inline,
+.whatsapp-inline{
+  will-change:transform;
+}
+.btn .magnetic-label,
+.offer-cta .magnetic-label{
+  display:inline-block;
+  transition:transform .22s ease-out;
+}
+
+/* EmpCo visual enters with progressive cards */
+.empco-dialog.open .empco-hero-copy{
+  animation:empcoContentIn .65s .08s cubic-bezier(.22,1,.36,1) both;
+}
+.empco-dialog.open .empco-date-seal{
+  animation:empcoSealIn .75s .16s cubic-bezier(.22,1,.36,1) both;
+}
+.empco-dialog.open .empco-rule,
+.empco-dialog.open .empco-impact-grid article{
+  animation:empcoCardIn .58s cubic-bezier(.22,1,.36,1) both;
+  animation-delay:calc(var(--stagger,0) * 80ms + .2s);
+}
+@keyframes empcoContentIn{
+  from{opacity:0;transform:translateX(-30px)}
+  to{opacity:1;transform:none}
+}
+@keyframes empcoSealIn{
+  from{opacity:0;transform:scale(.75) rotate(-12deg)}
+  to{opacity:1;transform:none}
+}
+@keyframes empcoCardIn{
+  from{opacity:0;transform:translateY(22px)}
+  to{opacity:1;transform:none}
+}
+
+/* Marquee gains subtle speed and depth on hover */
+.marquee-track{
+  transition:filter .3s,transform .3s;
+}
+.marquee:hover .marquee-track{
+  filter:contrast(1.05);
+}
+.marquee-item{
+  transition:letter-spacing .3s;
+}
+.marquee-item:hover{
+  letter-spacing:.15em;
+}
+
+/* A refined pointer-following response on interactive surfaces */
+[data-tilt-live]{
+  transform-style:preserve-3d;
+  transition:
+    transform .18s ease-out,
+    box-shadow .32s,
+    border-color .32s;
+}
+[data-tilt-live]>*{
+  transform:translateZ(12px);
+}
+
+/* Keep motion elegant on touch devices */
+@media(pointer:coarse){
+  .global-glow{display:none}
+  [data-tilt-live]{transform:none !important}
+}
+
+/* Mobile tuning */
+@media(max-width:680px){
+  .hero-title em::after{height:.055em}
+  .eco-node{animation:none}
+  .identity-card{animation:none}
+  .context-card,
+  .approach-card,
+  .success-card{
+    transform:none !important;
+  }
+}
+
+/* Respect accessibility preferences */
+@media(prefers-reduced-motion:reduce){
+  .motion-ready nav,
+  .motion-ready .hero .kicker,
+  .motion-ready .hero-title,
+  .motion-ready .hero-lead,
+  .motion-ready .hero-note,
+  .motion-ready .hero-actions,
+  .motion-ready .hero-visual{
+    opacity:1 !important;
+    transform:none !important;
+    animation:none !important;
+  }
+  .hero-title em,
+  .hero-photo,
+  .identity-card,
+  .context-section::after,
+  .approach-section::after,
+  .pricing-section::after,
+  .ecosystem-section::after,
+  .success-section::after,
+  .contact-section::after,
+  .plan-marker,
+  .plan-step::before,
+  .eco-node,
+  .eco-center{
+    animation:none !important;
+  }
+}
+</style>
+<style id="kairos-v9-ecosystem-layout-fix">
+/* Revenir au principe visuel précédent :
+   les cartes gravitent vraiment autour du cercle KAIROS,
+   tout en conservant la dynamique, les flottements et les hover states. */
+.ecosystem-orbit{
+  position:relative;
+  min-height:820px !important;
+  width:min(1180px, 100%);
+  margin:0 auto;
+}
+
+.eco-center{
+  left:50% !important;
+  top:50% !important;
+  transform:translate(-50%,-50%) !important;
+  z-index:10 !important;
+}
+
+/* Placement circulaire plus équilibré autour du centre */
+.eco-node{
+  position:absolute;
+  width:min(240px, 22vw);
+  max-width:240px;
+  min-width:210px;
+  z-index:4;
+}
+
+.eco-node.n1{left:8% !important; top:8% !important;}
+.eco-node.n2{right:8% !important; top:8% !important;}
+.eco-node.n3{left:4% !important; top:34% !important;}
+.eco-node.n4{right:4% !important; top:34% !important;}
+.eco-node.n5{left:14% !important; bottom:6% !important;}
+.eco-node.n6{right:14% !important; bottom:6% !important;}
+
+/* Le cercle guide reste bien visible derrière l'ensemble */
+.ecosystem-orbit::before,
+.ecosystem-orbit::after{
+  pointer-events:none;
+}
+
+/* Garder la sensation vivante sans casser la lisibilité */
+.eco-node .eco-card,
+.eco-node > article,
+.eco-node > div{
+  backface-visibility:hidden;
+}
+
+@media (max-width: 1280px){
+  .ecosystem-orbit{
+    min-height:760px !important;
+  }
+  .eco-node{
+    width:min(220px, 24vw);
+    min-width:190px;
+  }
+  .eco-node.n1{left:6% !important; top:8% !important;}
+  .eco-node.n2{right:6% !important; top:8% !important;}
+  .eco-node.n3{left:2% !important; top:35% !important;}
+  .eco-node.n4{right:2% !important; top:35% !important;}
+  .eco-node.n5{left:10% !important; bottom:5% !important;}
+  .eco-node.n6{right:10% !important; bottom:5% !important;}
+}
+
+@media (max-width: 1020px){
+  .ecosystem-orbit{
+    min-height:auto !important;
+    display:grid;
+    gap:1rem;
+  }
+  .eco-node{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    width:100%;
+    max-width:none;
+    min-width:0;
+    animation:none;
+  }
+  .eco-center{
+    position:relative !important;
+    left:auto !important;
+    top:auto !important;
+    transform:none !important;
+    order:-1;
+    margin:0 auto 1rem;
+  }
+}
+</style>
+<link href="https://kairos-consultance.com/" rel="canonical"/><link href="https://kairos-consultance.com/" hreflang="fr" rel="alternate"/><link href="https://kairos-consultance.com/" hreflang="en" rel="alternate"/><link href="https://kairos-consultance.com/" hreflang="x-default" rel="alternate"/><link href="assets/icons/favicon.ico" rel="icon" sizes="any"/><link href="assets/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="assets/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="assets/icons/apple-touch-icon.png" rel="apple-touch-icon"/><link href="site.webmanifest" rel="manifest"/><meta content="KAIROS" property="og:site_name"/><meta content="https://kairos-consultance.com/" property="og:url"/><meta content="fr_FR" property="og:locale"/><meta content="en_US" property="og:locale:alternate"/><meta content="https://kairos-consultance.com/assets/images/kairos-social-card.jpg" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="KAIROS, faire du voyage une force du bien" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="KAIROS | Faire du voyage une force du bien" name="twitter:title"/><meta content="KAIROS accompagne les tour-opérateurs malgaches à structurer une démarche de tourisme durable sincère, mobilisatrice, démontrable et reconnue internationalement." name="twitter:description"/><meta content="https://kairos-consultance.com/assets/images/kairos-social-card.jpg" name="twitter:image"/><meta content="telephone=yes" name="format-detection"/><meta content="MG-T" name="geo.region"/><meta content="Antananarivo" name="geo.placename"/><link as="image" fetchpriority="high" href="assets/images/valiha-andonimaraina.webp" rel="preload"/><!-- Google Search Console: replace YOUR_GOOGLE_SITE_VERIFICATION_TOKEN in index.html after verification. --><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://kairos-consultance.com/#organization",
+      "name": "KAIROS",
+      "url": "https://kairos-consultance.com/",
+      "logo": "https://kairos-consultance.com/assets/images/kairos-logo.png",
+      "image": "https://kairos-consultance.com/assets/images/kairos-social-card.jpg",
+      "description": "KAIROS accompagne les tour-opérateurs malgaches à structurer une démarche de tourisme durable sincère, mobilisatrice, démontrable et reconnue internationalement.",
+      "email": "mailto:valihamananjara@gmail.com",
+      "telephone": "+261378502796",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Madagascar"
+        },
+        {
+          "@type": "Place",
+          "name": "Indian Ocean"
+        },
+        {
+          "@type": "Place",
+          "name": "Europe"
+        }
+      ],
+      "founder": {
+        "@id": "https://kairos-consultance.com/#valiha"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/valiha-andonimaraina-consultante-tourisme-durable/"
+      ],
+      "knowsAbout": [
+        "Sustainable tourism",
+        "Travelife certification",
+        "Tour operator sustainability",
+        "Leadership",
+        "Branding",
+        "Digital marketing",
+        "Strategic communication"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://kairos-consultance.com/#valiha",
+      "name": "Valiha Andonimaraina",
+      "jobTitle": "Sustainable Tourism Consultant and Travelife Coach",
+      "image": "https://kairos-consultance.com/assets/images/valiha-andonimaraina.webp",
+      "worksFor": {
+        "@id": "https://kairos-consultance.com/#organization"
+      },
+      "url": "https://kairos-consultance.com/#valiha",
+      "sameAs": [
+        "https://www.linkedin.com/in/valiha-andonimaraina-consultante-tourisme-durable/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kairos-consultance.com/#website",
+      "url": "https://kairos-consultance.com/",
+      "name": "KAIROS",
+      "inLanguage": [
+        "fr",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://kairos-consultance.com/#organization"
+      }
+    }
+  ]
+}</script><script defer="" src="assets/js/analytics-config.js"></script><script>
+window.addEventListener("DOMContentLoaded", () => {
+  const cfg = window.KAIROS_ANALYTICS || {};
+
+  if (cfg.googleAnalyticsId && !cfg.googleAnalyticsId.includes("XXXX")) {
+    const ga = document.createElement("script");
+    ga.async = true;
+    ga.src = `https://www.googletagmanager.com/gtag/js?id=${cfg.googleAnalyticsId}`;
+    document.head.appendChild(ga);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", cfg.googleAnalyticsId, {
+      anonymize_ip: true,
+      transport_type: "beacon"
+    });
+  }
+
+  if (cfg.microsoftClarityId && !cfg.microsoftClarityId.includes("XXXX")) {
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", cfg.microsoftClarityId);
+  }
+});
+</script><meta content="strict-origin-when-cross-origin" name="referrer"/></head>
+<body class="lang-fr motion-ready">
+<a class="skip-link" href="#main">Aller au contenu</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="noise"></div>
+<div aria-hidden="true" class="global-glow" id="globalGlow"></div>
+<nav aria-label="Navigation principale" id="mainNav">
+<a aria-label="KAIROS | Accueil" class="brand" href="#top">
+<img alt="KAIROS | Valiha Andonimaraina" decoding="async" fetchpriority="high" height="1700" loading="eager" src="assets/images/valiha-andonimaraina.webp" width="1400"/>
+</a>
+<div class="nav-links">
+<a href="#enjeu"><span data-lang="fr">Pourquoi agir</span><span data-lang="en">Why act</span></a>
+<a href="#approche"><span data-lang="fr">Notre approche</span><span data-lang="en">Our approach</span></a>
+<a href="#offres"><span data-lang="fr">Accompagnements</span><span data-lang="en">Programs</span></a>
+<a href="#valiha">Valiha</a>
+<div aria-label="Langue" class="lang-switch">
+<button class="active" data-set-lang="fr" type="button">FR</button>
+<button data-set-lang="en" type="button">EN</button>
+</div>
+<a class="nav-cta" href="#contact"><span data-lang="fr">Parlons de votre projet</span><span data-lang="en">Let’s discuss your project</span></a>
+</div>
+<button aria-expanded="false" aria-label="Ouvrir le menu" class="menu-btn" id="menuBtn">☰</button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="#enjeu"><span data-lang="fr">Pourquoi agir</span><span data-lang="en">Why act</span></a>
+<a href="#approche"><span data-lang="fr">Notre approche</span><span data-lang="en">Our approach</span></a>
+<a href="#offres"><span data-lang="fr">Accompagnements</span><span data-lang="en">Programs</span></a>
+<a href="#valiha">Valiha</a>
+<a href="#contact"><span data-lang="fr">Parlons de votre projet</span><span data-lang="en">Let’s discuss your project</span></a>
+<div class="lang-switch mobile-lang">
+<button class="active" data-set-lang="fr" type="button">FR</button>
+<button data-set-lang="en" type="button">EN</button>
+</div>
+</div>
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top">
+<div class="hero-orbit one"></div>
+<div class="hero-orbit two"></div>
+<div class="hero-grid">
+<div class="reveal">
+<div class="kicker">
+<span data-lang="fr">Tourisme durable · Transformation · Madagascar</span>
+<span data-lang="en">Sustainable tourism · Transformation · Madagascar</span>
+</div>
+<h1 class="hero-title" data-lang="fr">Faire du voyage<br/>une <em>force du bien.</em></h1>
+<h1 class="hero-title" data-lang="en">Make travel<br/>a <em>force for good.</em></h1>
+<p class="hero-lead" data-lang="fr">
+        J’accompagne les tour-opérateurs malgaches à transformer leurs convictions en une démarche durable
+        sincère, mobilisatrice et démontrable, capable de créer de la valeur pour l’entreprise, les voyageurs,
+        les équipes, les communautés et les territoires.
+      </p>
+<p class="hero-lead" data-lang="en">
+        I support Malagasy tour operators in turning their convictions into sincere, engaging and measurable
+        sustainability practices, creating value for the business, travelers, teams, communities and destinations.
+      </p>
+<p class="hero-note" data-lang="fr">
+        La reconnaissance internationale devient alors la conséquence d’une transformation réelle :
+        une entreprise plus cohérente, plus résiliente et plus fidèle à ce qu’elle souhaite apporter au monde.
+      </p>
+<p class="hero-note" data-lang="en">
+        International recognition then becomes the consequence of real transformation:
+        a more coherent, resilient business that remains true to the value it wants to bring to the world.
+      </p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#contact">
+<span data-lang="fr">Réserver un diagnostic stratégique →</span>
+<span data-lang="en">Book a strategic assessment →</span>
+</a>
+<a class="btn btn-outline" href="#approche">
+<span data-lang="fr">Découvrir KAIROS</span>
+<span data-lang="en">Discover KAIROS</span>
+</a>
+</div>
+</div>
+<div class="hero-visual reveal-right" id="heroVisual">
+<div class="hero-photo" id="heroPhoto">
+<img alt="Valiha Andonimaraina" decoding="async" height="1700" loading="lazy" src="assets/images/valiha-andonimaraina.webp" width="1400"/>
+</div>
+<div class="identity-card">
+<div class="identity-primary">
+          Sustainable Tourism Consultant
+          <span class="identity-divider">|</span>
+          Travelife Coach™
+        </div>
+<div class="identity-secondary">
+          Branding, Digital Marketing &amp; Communication Strategy Consultant
+        </div>
+</div>
+</div>
+</div>
+<a class="scroll-cue" href="#enjeu">
+<span class="scroll-cue-icon">↓</span>
+<span data-lang="fr">Découvrir l’univers KAIROS</span>
+<span data-lang="en">Discover the KAIROS universe</span>
+</a>
+</section>
+<!-- MARQUEE -->
+<div aria-hidden="true" class="marquee">
+<div class="marquee-track">
+<span class="marquee-item" data-lang="fr">Impact sincère</span>
+<span class="marquee-item" data-lang="fr">Transformation humaine</span>
+<span class="marquee-item" data-lang="fr">Preuves crédibles</span>
+<span class="marquee-item" data-lang="fr">Valeur locale</span>
+<span class="marquee-item" data-lang="fr">Reconnaissance internationale</span>
+<span class="marquee-item" data-lang="fr">Impact sincère</span>
+<span class="marquee-item" data-lang="fr">Transformation humaine</span>
+<span class="marquee-item" data-lang="fr">Preuves crédibles</span>
+<span class="marquee-item" data-lang="fr">Valeur locale</span>
+<span class="marquee-item" data-lang="fr">Reconnaissance internationale</span>
+<span class="marquee-item" data-lang="en">Sincere impact</span>
+<span class="marquee-item" data-lang="en">Human transformation</span>
+<span class="marquee-item" data-lang="en">Credible evidence</span>
+<span class="marquee-item" data-lang="en">Local value</span>
+<span class="marquee-item" data-lang="en">International recognition</span>
+<span class="marquee-item" data-lang="en">Sincere impact</span>
+<span class="marquee-item" data-lang="en">Human transformation</span>
+<span class="marquee-item" data-lang="en">Credible evidence</span>
+<span class="marquee-item" data-lang="en">Local value</span>
+<span class="marquee-item" data-lang="en">International recognition</span>
+</div>
+</div>
+<!-- CONTEXT -->
+<section class="section context-section dark" id="enjeu">
+<div class="wrap context-layout">
+<div class="context-copy reveal-left">
+<div class="kicker"><span data-lang="fr">Une nouvelle époque</span><span data-lang="en">A new era</span></div>
+<h2 data-lang="fr">Le voyage entre dans un temps de vérité.</h2>
+<h2 data-lang="en">Travel is entering an age of truth.</h2>
+<p data-lang="fr">
+        Les partenaires demandent des preuves. Les réglementations se renforcent. Les voyageurs regardent
+        au-delà des promesses. Pourtant, la véritable question n’est pas seulement de savoir comment répondre
+        aux nouvelles exigences : elle est de décider quelle trace nous voulons laisser à travers les voyages
+        que nous créons.
+      </p>
+<p data-lang="en">
+        Partners are asking for evidence. Regulation is tightening. Travelers are looking beyond promises.
+        Yet the real question is not only how to meet new expectations, but what legacy we want the journeys
+        we create to leave behind.
+      </p>
+<button aria-controls="empcoDialog" aria-haspopup="dialog" class="empco-trigger" id="empcoOpen" type="button">
+<span class="empco-trigger-date">27.09.2026</span>
+<span class="empco-trigger-copy">
+<strong data-lang="fr">En savoir plus sur la directive EmpCo et le marché européen</strong>
+<strong data-lang="en">Learn more about the EmpCo Directive and the European market</strong>
+<small data-lang="fr">Ce qui change pour les acteurs du tourisme et les tour-opérateurs malgaches</small>
+<small data-lang="en">What changes for tourism businesses and Malagasy tour operators</small>
+</span>
+<span class="empco-trigger-action">
+<span data-lang="fr">Cliquez ici</span>
+<span data-lang="en">Click here</span>
+<b>↗</b>
+</span>
+</button>
+</div>
+<div class="context-grid">
+<article class="context-card reveal">
+<div class="context-index">01</div>
+<h3><span data-lang="fr">Les lignes bougent.</span><span data-lang="en">The landscape is shifting.</span></h3>
+<p data-lang="fr">Standards internationaux, règles européennes, audits et exigences B2B redéfinissent progressivement les conditions d’accès au marché.</p>
+<p data-lang="en">International standards, European rules, audits and B2B expectations are progressively redefining market access.</p>
+</article>
+<article class="context-card reveal">
+<div class="context-index">02</div>
+<h3><span data-lang="fr">Prouver ce qui compte.</span><span data-lang="en">Prove what matters.</span></h3>
+<p data-lang="fr">Même les engagements sincères restent fragiles lorsqu’ils ne sont ni structurés, ni suivis, ni documentés de manière crédible.</p>
+<p data-lang="en">Even sincere commitments remain fragile when they are not structured, monitored and credibly documented.</p>
+</article>
+<article class="context-card reveal">
+<div class="context-index">03</div>
+<h3><span data-lang="fr">Retrouver le cap.</span><span data-lang="en">Find the direction again.</span></h3>
+<p data-lang="fr">La pression ne doit pas remplacer la vision. Une démarche claire transforme l’urgence en trajectoire et les résistances en mouvement collectif.</p>
+<p data-lang="en">Pressure should not replace vision. A clear approach turns urgency into direction and resistance into collective movement.</p>
+</article>
+<article class="context-card reveal">
+<div class="context-index">04</div>
+<h3><span data-lang="fr">Préserver ce qui nous accueille.</span><span data-lang="en">Protect what welcomes us.</span></h3>
+<p data-lang="fr">Le tourisme ne devrait pas épuiser ce qu’il promet de faire découvrir. Il peut devenir une contribution réelle au vivant, aux cultures et aux économies locales.</p>
+<p data-lang="en">Tourism should not exhaust what it promises to reveal. It can become a genuine contribution to nature, culture and local economies.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- MANIFESTO -->
+<section class="section manifesto">
+<div class="wrap manifesto-grid">
+<blockquote class="manifesto-quote" data-lang="fr">
+      « Le voyage peut devenir une <em>force positive</em><br/>
+      et durable <span class="quote-soft">pour les personnes,</span><br/>
+<span class="quote-soft">les territoires et le vivant.</span> »
+    </blockquote>
+<blockquote class="manifesto-quote" data-lang="en">
+      “Travel can become a <em>positive force</em><br/>
+      and a lasting one <span class="quote-soft">for people,</span><br/>
+<span class="quote-soft">destinations and the living world.</span>”
+    </blockquote>
+<div class="manifesto-talk reveal-right">
+<p data-lang="fr">
+        Je crois profondément que le voyage est une force du bien dans le monde. Lorsqu’il est pensé avec
+        conscience, il peut insuffler un changement positif et durable pour les destinations, les personnes,
+        la biodiversité et l’économie.
+      </p>
+<p data-lang="fr">
+        Il peut soutenir des familles, renforcer les économies locales, préserver les patrimoines naturels et
+        culturels, créer des rencontres qui transforment durablement les personnes et protéger ce qui rend
+        chaque territoire unique.
+      </p>
+<p data-lang="fr">
+        Le défi est de donner à cette promesse une réalité concrète, visible et durable, et d’avancer ensemble
+        vers un tourisme plus résilient, plus inclusif, plus positif et plus régénératif.
+      </p>
+<p data-lang="en">
+        I deeply believe that travel is a force for good in the world. When designed consciously, it can inspire
+        lasting positive change for destinations, people, biodiversity and the economy.
+      </p>
+<p data-lang="en">
+        It can support families, strengthen local economies, preserve natural and cultural heritage, create
+        encounters that transform people and protect what makes each destination unique.
+      </p>
+<p data-lang="en">
+        The challenge is to turn this promise into a concrete, visible and lasting reality, and move together
+        toward tourism that is more resilient, inclusive, positive and regenerative.
+      </p>
+<p><strong><span data-lang="fr">C’est cette transformation que KAIROS met en mouvement.</span><span data-lang="en">This is the transformation KAIROS sets in motion.</span></strong></p>
+</div>
+</div>
+</section>
+<!-- APPROACH -->
+<section class="section approach-section" id="approche">
+<div class="wrap">
+<div class="section-heading reveal">
+<div class="kicker"><span data-lang="fr">Mettre une vision en mouvement</span><span data-lang="en">Set a vision in motion</span></div>
+<h2 data-lang="fr">Du sens à la preuve. De la conviction à l’impact.</h2>
+<h2 data-lang="en">From meaning to evidence. From conviction to impact.</h2>
+<p data-lang="fr">
+        Une transition durable réussie ne repose jamais sur un document isolé. Elle naît d’une vision claire,
+        grandit avec les personnes et s’ancre dans des pratiques concrètes, suivies et démontrables.
+      </p>
+<p data-lang="en">
+        A successful sustainability transition never rests on an isolated document. It begins with a clear vision,
+        grows through people and becomes embedded in concrete, monitored and measurable practices.
+      </p>
+</div>
+<div class="approach-grid">
+<article class="approach-card reveal">
+<div class="approach-number">01</div>
+<div>
+<div class="approach-label"><span data-lang="fr">STRATÉGIQUE</span><span data-lang="en">STRATEGIC</span></div>
+<h3><span data-lang="fr">Clarifier la direction.</span><span data-lang="en">Clarify the direction.</span></h3>
+<p data-lang="fr">Comprendre votre point de départ, révéler votre singularité et construire une feuille de route réaliste, budgétisée et alignée sur vos ambitions.</p>
+<p data-lang="en">Understand your starting point, reveal your uniqueness and build a realistic, budgeted roadmap aligned with your ambitions.</p>
+</div>
+</article>
+<article class="approach-card reveal">
+<div class="approach-number">02</div>
+<div>
+<div class="approach-label"><span data-lang="fr">HUMAIN</span><span data-lang="en">HUMAN</span></div>
+<h3><span data-lang="fr">Embarquer les personnes.</span><span data-lang="en">Bring people on board.</span></h3>
+<p data-lang="fr">Créer une compréhension commune, donner une place à chacun et transformer les résistances en participation, en responsabilité et en fierté collective.</p>
+<p data-lang="en">Build shared understanding, give everyone a place and turn resistance into participation, ownership and collective pride.</p>
+</div>
+</article>
+<article class="approach-card reveal">
+<div class="approach-number">03</div>
+<div>
+<div class="approach-label"><span data-lang="fr">OPÉRATIONNEL</span><span data-lang="en">OPERATIONAL</span></div>
+<h3><span data-lang="fr">Ancrer le changement.</span><span data-lang="en">Embed the change.</span></h3>
+<p data-lang="fr">Transformer les intentions en procédures, outils, indicateurs, preuves et habitudes durables qui restent utiles bien au-delà de la certification.</p>
+<p data-lang="en">Turn intentions into procedures, tools, indicators, evidence and lasting habits that remain useful beyond certification.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- PLAN -->
+<section class="section plan-section">
+<div class="wrap">
+<div class="section-heading reveal">
+<div class="kicker"><span data-lang="fr">À vos côtés, à chaque étape</span><span data-lang="en">By your side, at every step</span></div>
+<h2 data-lang="fr">Vous n’avez pas à porter seul la complexité.</h2>
+<h2 data-lang="en">You do not have to carry the complexity alone.</h2>
+<p data-lang="fr">
+        KAIROS vous aide à transformer les exigences en décisions claires, à soutenir vos équipes dans le changement
+        et à maintenir le cap jusqu’à l’obtention de résultats concrets et démontrables.
+      </p>
+<p data-lang="en">
+        KAIROS helps turn complex expectations into clear decisions, supports your teams through change
+        and stays with you until concrete, measurable results are achieved.
+      </p>
+</div>
+<div class="plan-grid">
+<article class="plan-step reveal" data-step="1">
+<div class="plan-marker">01</div>
+<h3><span data-lang="fr">Nous commençons par vous écouter.</span><span data-lang="en">We begin by listening.</span></h3>
+<p data-lang="fr">Nous prenons le temps de comprendre votre entreprise, vos réalités de terrain, vos ambitions et les personnes qui feront vivre la transformation.</p>
+<p data-lang="en">We take time to understand your business, field realities, ambitions and the people who will bring the transformation to life.</p>
+</article>
+<article class="plan-step reveal" data-step="2">
+<div class="plan-marker">02</div>
+<h3><span data-lang="fr">Nous construisons avec vous.</span><span data-lang="en">We build with you.</span></h3>
+<p data-lang="fr">La stratégie, les outils et le calendrier sont conçus autour de vos priorités afin que la démarche soit ambitieuse, mais réellement applicable.</p>
+<p data-lang="en">The strategy, tools and timeline are shaped around your priorities so the approach remains ambitious and genuinely workable.</p>
+</article>
+<article class="plan-step reveal" data-step="3">
+<div class="plan-marker">03</div>
+<h3><span data-lang="fr">Nous restons présents dans le mouvement.</span><span data-lang="en">We remain present throughout the journey.</span></h3>
+<p data-lang="fr">Nous accompagnons les équipes, suivons les avancées, ajustons ce qui doit l’être et sécurisons les preuves jusqu’à ce que le changement soit solidement ancré.</p>
+<p data-lang="en">We support teams, monitor progress, adjust what is needed and secure evidence until the change is firmly embedded.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- PRICING / OFFERS -->
+<section class="section pricing-section" id="offres">
+<div class="pricing-wrap">
+<div class="pricing-heading reveal">
+<div class="kicker"><span data-lang="fr">Trois chemins, une même ambition</span><span data-lang="en">Three paths, one shared ambition</span></div>
+<h2 data-lang="fr">Choisissez le niveau d’accompagnement qui correspond à votre réalité.</h2>
+<h2 data-lang="en">Choose the level of support that matches your reality.</h2>
+<p data-lang="fr">
+        Chaque organisation avance depuis un point différent. Les trois niveaux KAIROS conservent la même exigence :
+        construire une démarche crédible, adaptée au terrain et capable de créer une valeur durable.
+      </p>
+<p data-lang="en">
+        Every organization begins from a different point. The three KAIROS levels share the same standard:
+        building a credible, practical approach capable of creating lasting value.
+      </p>
+</div>
+<div aria-label="Offres KAIROS" class="offer-tabs reveal" role="tablist">
+<button class="offer-tab active" data-offer-tab="0" type="button"><span data-lang="fr">01 · Diagnostic</span><span data-lang="en">01 · Assessment</span></button>
+<button class="offer-tab" data-offer-tab="1" type="button"><span data-lang="fr">02 · Transformation</span><span data-lang="en">02 · Transformation</span></button>
+<button class="offer-tab" data-offer-tab="2" type="button"><span data-lang="fr">03 · Catalyseur</span><span data-lang="en">03 · Catalyst</span></button>
+</div>
+<!-- OFFER 1 -->
+<div class="offer-panel active" data-offer-panel="0">
+<article class="offer-card spotlight">
+<div class="offer-glow"></div>
+<div class="offer-header">
+<span class="offer-badge"><span data-lang="fr">Point d’entrée</span><span data-lang="en">Entry point</span></span>
+<div class="offer-level"><span data-lang="fr">Niveau 01</span><span data-lang="en">Level 01</span></div>
+<h3 class="offer-name">Diagnostic &amp; Engagement</h3>
+<p class="offer-tagline" data-lang="fr">
+            Vous savez que vous devez agir, mais vous ne savez pas encore précisément d’où vous partez.
+            Ce niveau vous apporte la clarté et les fondations nécessaires pour engager une démarche crédible.
+          </p>
+<p class="offer-tagline" data-lang="en">
+            You know action is needed, but you do not yet know exactly where you stand.
+            This level provides the clarity and foundations needed to begin a credible approach.
+          </p>
+<div class="offer-price-label"><span data-lang="fr">À partir de</span><span data-lang="en">Starting from</span></div>
+<div class="offer-price">2 600 000 <small>Ar</small></div>
+<div class="offer-duration"><span data-lang="fr">Prestation unique · 3 à 6 semaines</span><span data-lang="en">One-off service · 3 to 6 weeks</span></div>
+</div>
+<div class="offer-divider"></div>
+<div class="offer-body">
+<div class="offer-subtitle"><span data-lang="fr">CE QUE VOUS OBTENEZ</span><span data-lang="en">WHAT YOU RECEIVE</span></div>
+<ul class="offer-list">
+<li><span data-lang="fr">Audit complet de vos pratiques actuelles : opérations, achats, ressources humaines et environnement</span><span data-lang="en">Full audit of current practices: operations, procurement, human resources and environment</span></li>
+<li><span data-lang="fr">Cartographie de vos forces, lacunes et risques existants</span><span data-lang="en">Mapping of strengths, gaps and existing risks</span></li>
+<li><span data-lang="fr">Rapport de positionnement durabilité avec recommandations actionnables</span><span data-lang="en">Sustainability positioning report with actionable recommendations</span></li>
+<li><span data-lang="fr">Feuille de route vers la certification Travelife, adaptée à votre réalité terrain</span><span data-lang="en">Roadmap toward Travelife certification, tailored to your field reality</span></li>
+<li><span data-lang="fr">Session de restitution stratégique</span><span data-lang="en">Strategic debrief session</span></li>
+</ul>
+<button class="offer-cta light offer-contact" data-offer-name="Diagnostic &amp; Engagement" type="button">
+<span data-lang="fr">Planifier mon rendez-vous →</span><span data-lang="en">Schedule my meeting →</span>
+</button>
+</div>
+</article>
+<aside class="offer-side">
+<div class="side-card">
+<div class="side-title"><span data-lang="fr">CE NIVEAU EST FAIT POUR VOUS SI…</span><span data-lang="en">THIS LEVEL IS RIGHT FOR YOU IF…</span></div>
+<ul class="side-list">
+<li><span data-lang="fr">Vos partenaires vous interrogent sur votre politique environnementale</span><span data-lang="en">Partners are asking about your environmental policy</span></li>
+<li><span data-lang="fr">Vous souhaitez comprendre concrètement ce qu’implique Travelife</span><span data-lang="en">You want to understand what Travelife concretely involves</span></li>
+<li><span data-lang="fr">Vos pratiques existent, mais ne sont pas encore structurées ni documentées</span><span data-lang="en">Your practices exist but are not yet structured or documented</span></li>
+<li><span data-lang="fr">Vous souhaitez découvrir la méthode KAIROS avant un engagement plus long</span><span data-lang="en">You want to experience the KAIROS method before a longer commitment</span></li>
+</ul>
+</div>
+<div class="side-card accent">
+<div class="side-title"><span data-lang="fr">CE QUE CE DIAGNOSTIC VOUS ÉVITE</span><span data-lang="en">WHAT THIS ASSESSMENT HELPS YOU AVOID</span></div>
+<p data-lang="fr">S’engager sans diagnostic, c’est avancer sans carte. Cette première étape permet d’économiser du temps, d’éviter les fausses priorités et d’investir là où le changement produira réellement de la valeur.</p>
+<p data-lang="en">Committing without an assessment means moving forward without a map. This first step saves time, prevents false priorities and directs investment where change will create real value.</p>
+</div>
+</aside>
+</div>
+<!-- OFFER 2 -->
+<div class="offer-panel" data-offer-panel="1">
+<article class="offer-card featured spotlight">
+<div class="offer-glow"></div>
+<div class="offer-header">
+<span class="offer-badge"><span data-lang="fr">Le plus choisi</span><span data-lang="en">Most chosen</span></span>
+<div class="offer-level"><span data-lang="fr">Niveau 02 · Cœur de l’offre</span><span data-lang="en">Level 02 · Core offer</span></div>
+<h3 class="offer-name">Transformation IMPACT</h3>
+<p class="offer-tagline" data-lang="fr">
+            L’accompagnement complet, du premier engagement jusqu’au dossier de certification Travelife.
+            Sept mois pour faire évoluer en profondeur la trajectoire de votre entreprise.
+          </p>
+<p class="offer-tagline" data-lang="en">
+            Comprehensive support from the first commitment to the Travelife certification file.
+            Seven months to deeply shift the trajectory of your business.
+          </p>
+<div class="offer-price-label"><span data-lang="fr">À partir de</span><span data-lang="en">Starting from</span></div>
+<div class="offer-price">3 900 000 <small>Ar / mois</small></div>
+<div class="offer-duration"><span data-lang="fr">Engagement 7 mois · 16 à 20 h/semaine dédiées</span><span data-lang="en">7-month commitment · 16 to 20 dedicated hours/week</span></div>
+</div>
+<div class="offer-divider"></div>
+<div class="offer-body">
+<div class="offer-subtitle"><span data-lang="fr">LES 6 PHASES DU PROGRAMME</span><span data-lang="en">THE 6 PROGRAM PHASES</span></div>
+<div class="phase-chips">
+<span class="phase-chip">① Engagement</span>
+<span class="phase-chip">② Baseline Assessment</span>
+<span class="phase-chip">③ Sustainability Policy</span>
+<span class="phase-chip">④ Action Plan</span>
+<span class="phase-chip">⑤ Monitoring &amp; Évaluation</span>
+<span class="phase-chip">⑥ Reporting &amp; Communication</span>
+</div>
+<div class="offer-subtitle"><span data-lang="fr">LIVRABLES CLÉS INCLUS</span><span data-lang="en">KEY DELIVERABLES INCLUDED</span></div>
+<ul class="offer-list">
+<li><span data-lang="fr">Diagnostic complet de vos pratiques actuelles</span><span data-lang="en">Full diagnostic of current practices</span></li>
+<li><span data-lang="fr">Politique de développement durable officielle</span><span data-lang="en">Official sustainable development policy</span></li>
+<li><span data-lang="fr">Plan d’action complet avec KPIs mesurables</span><span data-lang="en">Complete action plan with measurable KPIs</span></li>
+<li><span data-lang="fr">Formations et ateliers inédits pour les équipes : Travel Designers, guides, chauffeurs, commerciaux…</span><span data-lang="en">Original training and workshops for Travel Designers, guides, drivers and sales teams</span></li>
+<li><span data-lang="fr">Tableau de bord de pilotage et suivi mensuel</span><span data-lang="en">Management dashboard and monthly monitoring</span></li>
+<li><span data-lang="fr">Accompagnement du Rapport Travelife jusqu’à la préparation de l’audit</span><span data-lang="en">Support for the Travelife Report through audit preparation</span></li>
+<li><span data-lang="fr">Dossier de conformité EmpCo destiné à vos partenaires émetteurs</span><span data-lang="en">EmpCo compliance file for outbound partners</span></li>
+</ul>
+<button class="offer-cta green offer-contact" data-offer-name="Transformation IMPACT" type="button">
+<span data-lang="fr">Lancer ma Transformation IMPACT →</span><span data-lang="en">Launch my IMPACT Transformation →</span>
+</button>
+</div>
+</article>
+<aside class="offer-side">
+<div class="side-card">
+<div class="side-title"><span data-lang="fr">LE PARCOURS EN DÉTAIL</span><span data-lang="en">THE JOURNEY IN DETAIL</span></div>
+<div class="phase-timeline">
+<div class="phase-line"><div class="phase-number">1</div><div class="phase-copy"><strong>Engagement</strong><span data-lang="fr">Alignement de la direction, charte d’engagement, objectifs stratégiques</span><span data-lang="en">Leadership alignment, commitment charter, strategic objectives</span></div></div>
+<div class="phase-line"><div class="phase-number">2</div><div class="phase-copy"><strong>Baseline Assessment</strong><span data-lang="fr">Audit 360°, cartographie des impacts, benchmark</span><span data-lang="en">360° audit, impact mapping, benchmarking</span></div></div>
+<div class="phase-line"><div class="phase-number">3</div><div class="phase-copy"><strong>Sustainability Policy</strong><span data-lang="fr">Politique officielle, engagements publics, gouvernance interne</span><span data-lang="en">Official policy, public commitments, internal governance</span></div></div>
+<div class="phase-line"><div class="phase-number">4</div><div class="phase-copy"><strong>Action Plan</strong><span data-lang="fr">Plan priorisé, budget, responsables et calendrier</span><span data-lang="en">Prioritized plan, budget, owners and schedule</span></div></div>
+<div class="phase-line"><div class="phase-number">5</div><div class="phase-copy"><strong>Monitoring &amp; Évaluation</strong><span data-lang="fr">Tableau de bord, revues mensuelles, ajustements</span><span data-lang="en">Dashboard, monthly reviews and adjustments</span></div></div>
+<div class="phase-line"><div class="phase-number">6</div><div class="phase-copy"><strong>Reporting &amp; Communication</strong><span data-lang="fr">Rapport Travelife, dossier partenaires, communication externe</span><span data-lang="en">Travelife report, partner file, external communication</span></div></div>
+</div>
+</div>
+<div class="side-card accent">
+<div class="side-title"><span data-lang="fr">CE QUE CE PARCOURS REND POSSIBLE</span><span data-lang="en">WHAT THIS JOURNEY MAKES POSSIBLE</span></div>
+<p data-lang="fr">Une démarche structurée et crédible, des équipes davantage engagées, des preuves plus solides et une entreprise mieux préparée aux attentes de ses partenaires internationaux.</p>
+<p data-lang="en">A structured and credible approach, more engaged teams, stronger evidence and a business better prepared for international partner expectations.</p>
+</div>
+</aside>
+</div>
+<!-- OFFER 3 -->
+<div class="offer-panel solo" data-offer-panel="2">
+<article class="offer-card catalyst spotlight">
+<div class="offer-glow"></div>
+<div class="offer-header">
+<span class="offer-badge"><span data-lang="fr">Sur invitation</span><span data-lang="en">By invitation</span></span>
+<div class="offer-level"><span data-lang="fr">Niveau 03 · Accompagnement multidimensionnel</span><span data-lang="en">Level 03 · Multidimensional support</span></div>
+<h3 class="offer-name">Programme Catalyseur</h3>
+<p class="offer-tagline" data-lang="fr">
+            Pour les leaders qui souhaitent faire autrement, et en grand. Les six phases de Transformation IMPACT,
+            amplifiées par un écosystème d’experts sélectionnés autour de vos enjeux spécifiques.
+          </p>
+<p class="offer-tagline" data-lang="en">
+            For leaders who want to work differently and boldly. The six IMPACT Transformation phases,
+            amplified by a selected ecosystem of experts around your specific challenges.
+          </p>
+<div class="offer-price-label"><span data-lang="fr">Tarif</span><span data-lang="en">Pricing</span></div>
+<div class="offer-price"><span data-lang="fr">Sur devis</span><span data-lang="en">On quotation</span></div>
+<div class="offer-duration"><span data-lang="fr">Engagement exclusif</span><span data-lang="en">Exclusive engagement</span></div>
+</div>
+<div class="offer-divider"></div>
+<div class="offer-body">
+<div class="offer-subtitle"><span data-lang="fr">LES 6 PHASES + UNE EXPERTISE MULTIDIMENSIONNELLE</span><span data-lang="en">THE 6 PHASES + MULTIDIMENSIONAL EXPERTISE</span></div>
+<div class="phase-chips">
+<span class="phase-chip">① Engagement</span>
+<span class="phase-chip">② Baseline Assessment</span>
+<span class="phase-chip">③ Sustainability Policy</span>
+<span class="phase-chip">④ Action Plan</span>
+<span class="phase-chip">⑤ Monitoring &amp; Évaluation</span>
+<span class="phase-chip">⑥ Reporting &amp; Communication</span>
+</div>
+<div class="expert-extra-grid">
+<div class="expert-extra"><strong>+ Leadership</strong><p><span data-lang="fr">Maxwell Leadership® · Conduite du changement · Vision stratégique des dirigeants</span><span data-lang="en">Maxwell Leadership® · Change management · Executive strategic vision</span></p></div>
+<div class="expert-extra"><strong><span data-lang="fr">+ Équipes</span><span data-lang="en">+ Teams</span></strong><p><span data-lang="fr">Profil DISC · Psychologie d’organisation · Cohésion et engagement interne</span><span data-lang="en">DISC Profile · Organizational psychology · Cohesion and internal engagement</span></p></div>
+<div class="expert-extra"><strong>+ Communication</strong><p><span data-lang="fr">Branding durable · Stratégie digitale · Positionnement de marché</span><span data-lang="en">Sustainable branding · Digital strategy · Market positioning</span></p></div>
+<div class="expert-extra"><strong><span data-lang="fr">+ Sensibilisation</span><span data-lang="en">+ Awareness</span></strong><p><span data-lang="fr">Fresque de la Biodiversité · Ateliers prospectifs · Culture durable profonde</span><span data-lang="en">Biodiversity Fresco · Prospective workshops · Deep sustainability culture</span></p></div>
+</div>
+<p class="catalyst-note" data-lang="fr">
+            Ce niveau s’adresse aux dirigeants qui voient la transformation durable comme un projet stratégique
+            global et souhaitent mobiliser les expertises nécessaires à la hauteur de leur ambition.
+          </p>
+<p class="catalyst-note" data-lang="en">
+            This level is designed for leaders who see sustainability transformation as a comprehensive strategic
+            project and want to mobilize the expertise required by their ambition.
+          </p>
+<button class="offer-cta mustard offer-contact" data-offer-name="Programme Catalyseur" type="button">
+<span data-lang="fr">Demander un devis personnalisé →</span><span data-lang="en">Request a personalized quotation →</span>
+</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ECOSYSTEM -->
+<section class="section ecosystem-section">
+<div class="wrap">
+<div class="ecosystem-intro reveal">
+<div class="kicker"><span data-lang="fr">Plus loin, ensemble</span><span data-lang="en">Further, together</span></div>
+<h2 data-lang="fr">Les transformations durables sont toujours des œuvres collectives.</h2>
+<h2 data-lang="en">Sustainable transformations are always collective work.</h2>
+<p data-lang="fr">
+        Selon votre réalité, KAIROS mobilise les expertises complémentaires qui permettront à la transformation
+        d’être cohérente dans toutes ses dimensions, leadership, humain, sensibilisation, comportement et communication.
+      </p>
+<p data-lang="en">
+        Depending on your reality, KAIROS mobilizes the complementary expertise needed for transformation to remain
+        coherent across leadership, people, awareness, behavior and communication.
+      </p>
+</div>
+<div class="ecosystem-orbit">
+<div class="eco-center reveal">
+<div>
+<strong>KAIROS</strong>
+<p data-lang="fr">Une vision commune. Les bons experts au bon moment, au service de votre entreprise pour une transformation durable.</p>
+<p data-lang="en">One shared vision. The right experts at the right time, serving your business and its sustainable transformation.</p>
+</div>
+</div>
+<article class="eco-node n1 reveal-left">
+<h3>KAIROS · Valiha</h3>
+<p><span data-lang="fr">Certification Travelife et stratégie de transformation durable</span><span data-lang="en">Travelife certification and sustainability transformation strategy</span></p>
+</article>
+<article class="eco-node n2 reveal-right">
+<h3>Maxwell Leadership®</h3>
+<p><span data-lang="fr">Leadership et conduite du changement</span><span data-lang="en">Leadership and change management</span></p>
+</article>
+<article class="eco-node n3 reveal-left">
+<h3><span data-lang="fr">Psychologue</span><span data-lang="en">Psychologist</span></h3>
+<p><span data-lang="fr">Bien-être, dynamique humaine et accompagnement des équipes</span><span data-lang="en">Wellbeing, human dynamics and team support</span></p>
+</article>
+<article class="eco-node n4 reveal-right">
+<h3><span data-lang="fr">Fresque</span><span data-lang="en">Fresco workshops</span></h3>
+<p><span data-lang="fr">Sensibilisation collective et culture durable</span><span data-lang="en">Collective awareness and sustainability culture</span></p>
+</article>
+<article class="eco-node n5 reveal-left">
+<h3><span data-lang="fr">Consultante DISC</span><span data-lang="en">DISC Consultant</span></h3>
+<p><span data-lang="fr">Analyse comportementale, communication et cohésion</span><span data-lang="en">Behavioral analysis, communication and cohesion</span></p>
+</article>
+<article class="eco-node n6 reveal-right">
+<h3><span data-lang="fr">Stratégie &amp; Branding</span><span data-lang="en">Strategy &amp; Branding</span></h3>
+<p><span data-lang="fr">Communication alignée, marketing digital et positionnement</span><span data-lang="en">Aligned communication, digital marketing and positioning</span></p>
+</article>
+</div>
+</div>
+</section>
+<!-- ABOUT / EDITORIAL -->
+<section class="section about-section" id="valiha">
+<div class="wrap about-grid">
+<div class="about-photo reveal-left">
+<div class="about-photo-frame">
+<img alt="Valiha Andonimaraina" decoding="async" height="1700" loading="lazy" src="assets/images/valiha-andonimaraina.webp" width="1400"/>
+</div>
+<div class="about-identity">
+<div class="identity-primary">
+          Sustainable Tourism Consultant
+          <span class="identity-divider">|</span>
+          Travelife Coach™
+        </div>
+<div class="identity-secondary">
+          Branding, Digital Marketing &amp; Communication Strategy Consultant
+        </div>
+</div>
+</div>
+<article class="editorial reveal-right">
+<div class="kicker"><span data-lang="fr">Édito</span><span data-lang="en">Editorial</span></div>
+<h2 data-lang="fr">Nous travaillons dans le voyage. Cela nous donne un pouvoir, et une responsabilité.</h2>
+<h2 data-lang="en">We work in travel. That gives us both power and responsibility.</h2>
+<p class="opening" data-lang="fr">
+        Chaque itinéraire que nous imaginons, chaque partenariat que nous choisissons et chaque histoire que nous
+        racontons contribue à façonner la manière dont une destination sera vécue, comprise et transmise.
+      </p>
+<p class="opening" data-lang="en">
+        Every itinerary we imagine, every partnership we choose and every story we tell helps shape how a destination
+        will be experienced, understood and passed on.
+      </p>
+<p data-lang="fr">
+        C’est une responsabilité immense. Mais c’est aussi une formidable opportunité : celle de faire du tourisme
+        un moteur de développement, de préservation, de transmission et de rencontre. Celle de prouver qu’une entreprise
+        peut être performante tout en restant profondément humaine, sincère et utile au monde qui l’entoure.
+      </p>
+<p data-lang="en">
+        It is an immense responsibility, but also a remarkable opportunity: to make tourism a driver of development,
+        preservation, transmission and connection, and to prove that a business can perform while remaining deeply
+        human, sincere and useful to the world around it.
+      </p>
+<p data-lang="fr">
+        KAIROS est né de cette conviction. Je ne souhaite pas seulement vous conduire vers une certification.
+        Je souhaite vous aider à révéler ce qui existe déjà de précieux dans votre entreprise, à rassembler vos équipes
+        autour d’une direction commune et à transformer vos valeurs en une culture vivante, visible et transmissible.
+      </p>
+<p data-lang="en">
+        KAIROS was born from this conviction. My aim is not simply to guide you toward certification, but to reveal
+        what is already valuable in your business, unite teams around a shared direction and turn values into a living,
+        visible and transferable culture.
+      </p>
+<p data-lang="fr">
+        Parce que le changement n’appartient pas à quelques experts isolés. Il prend vie lorsque des dirigeants, des équipes,
+        des partenaires et des destinations choisissent d’avancer ensemble. Je vous invite à prendre part à ce mouvement.
+      </p>
+<p data-lang="en">
+        Change does not belong to a few isolated experts. It comes alive when leaders, teams, partners and destinations
+        choose to move forward together. I invite you to be part of that movement.
+      </p>
+<div class="skills">
+<span class="skill"><span data-lang="fr">Stratégie de tourisme durable</span><span data-lang="en">Sustainable tourism strategy</span></span>
+<span class="skill">Certification Travelife</span>
+<span class="skill"><span data-lang="fr">Intelligence collective</span><span data-lang="en">Collective intelligence</span></span>
+<span class="skill"><span data-lang="fr">Conduite du changement</span><span data-lang="en">Change management</span></span>
+<span class="skill">Leadership</span>
+<span class="skill">Facilitation</span>
+<span class="skill">Branding</span>
+<span class="skill">Digital Marketing</span>
+<span class="skill"><span data-lang="fr">Communication stratégique</span><span data-lang="en">Strategic communication</span></span>
+</div>
+</article>
+</div>
+</section>
+<!-- SUCCESS -->
+<section class="section success-section">
+<div class="wrap">
+<div class="success-heading reveal">
+<div class="kicker"><span data-lang="fr">Ce que vous rendez possible</span><span data-lang="en">What you make possible</span></div>
+<h2 data-lang="fr">Construire une entreprise dont vos équipes sont fières, que vos partenaires respectent et qui crée une valeur durable pour les territoires et les communautés.</h2>
+<h2 data-lang="en">Build a business your teams are proud of, your partners respect and destinations are grateful for.</h2>
+<p data-lang="fr">
+        Le succès ne se mesure pas uniquement à l’obtention d’un label. Il se reconnaît dans la qualité des décisions,
+        la confiance des partenaires, l’engagement des équipes et la valeur que l’entreprise laisse derrière elle.
+      </p>
+<p data-lang="en">
+        Success is not measured only by obtaining a label. It can be seen in the quality of decisions, partner trust,
+        team commitment and the value the business leaves behind.
+      </p>
+</div>
+<div class="success-grid">
+<article class="success-card reveal"><div class="success-symbol">✦</div><h3><span data-lang="fr">Respectée par ses partenaires</span><span data-lang="en">Respected by its partners</span></h3><p data-lang="fr">Vos engagements deviennent lisibles, crédibles et soutenus par des preuves solides.</p><p data-lang="en">Your commitments become clear, credible and supported by solid evidence.</p></article>
+<article class="success-card reveal"><div class="success-symbol">✦</div><h3><span data-lang="fr">Fière de ses pratiques</span><span data-lang="en">Proud of its practices</span></h3><p data-lang="fr">Votre entreprise peut parler de son impact avec sincérité, précision et confiance.</p><p data-lang="en">Your business can speak about its impact with sincerity, precision and confidence.</p></article>
+<article class="success-card reveal"><div class="success-symbol">✦</div><h3><span data-lang="fr">Inspirante pour ses équipes</span><span data-lang="en">Inspiring to its teams</span></h3><p data-lang="fr">Chacun comprend sa contribution et trouve une place réelle dans la transformation.</p><p data-lang="en">Everyone understands their contribution and has a genuine place in the transformation.</p></article>
+<article class="success-card reveal"><div class="success-symbol">✦</div><h3><span data-lang="fr">Créatrice de valeur locale</span><span data-lang="en">Creating local value</span></h3><p data-lang="fr">Votre activité soutient plus justement les communautés, les métiers et les économies des territoires.</p><p data-lang="en">Your activity more fairly supports communities, professions and destination economies.</p></article>
+<article class="success-card reveal"><div class="success-symbol">✦</div><h3><span data-lang="fr">Prête pour demain</span><span data-lang="en">Ready for tomorrow</span></h3><p data-lang="fr">Vous anticipez les évolutions du marché et construisez une résilience qui dépasse les urgences du moment.</p><p data-lang="en">You anticipate market shifts and build resilience beyond immediate pressures.</p></article>
+<article class="success-card reveal"><div class="success-symbol">✦</div><h3><span data-lang="fr">Porteuse d’un héritage positif</span><span data-lang="en">Leaving a positive legacy</span></h3><p data-lang="fr">Votre entreprise contribue à préserver ce qui rend les destinations vivantes, uniques et désirables.</p><p data-lang="en">Your business helps preserve what keeps destinations alive, unique and meaningful.</p></article>
+<article class="success-card reveal"><div class="success-symbol">✦</div><h3><span data-lang="fr">Attractive pour les talents</span><span data-lang="en">Attractive to talent</span></h3><p data-lang="fr">Votre culture donne envie aux personnes engagées de vous rejoindre, de grandir avec vous et de contribuer à une mission qui compte.</p><p data-lang="en">Your culture attracts committed people who want to join, grow with you and contribute to a mission that matters.</p></article>
+<article class="success-card reveal"><div class="success-symbol">✦</div><h3><span data-lang="fr">Capable d’ouvrir la voie</span><span data-lang="en">Able to lead the way</span></h3><p data-lang="fr">Votre entreprise inspire son écosystème et démontre qu’une autre manière de faire du tourisme est possible, crédible et porteuse d’avenir.</p><p data-lang="en">Your business inspires its ecosystem and shows that another way of doing tourism is possible, credible and future-facing.</p></article>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+<div class="wrap contact-grid">
+<div class="contact-copy reveal-left">
+<div class="kicker"><span data-lang="fr">Votre prochain chapitre</span><span data-lang="en">Your next chapter</span></div>
+<h2 data-lang="fr">C’est le moment opportun pour agir. Avançons ensemble.</h2>
+<h2 data-lang="en">This is the right moment to act. Let’s move forward together.</h2>
+<p data-lang="fr">
+        Parlez-moi de votre entreprise, de vos ambitions et de ce qui vous appelle aujourd’hui à passer à l’action.
+        Nous identifierons ensemble la manière la plus juste, réaliste et porteuse de sens d’avancer.
+      </p>
+<p data-lang="en">
+        Tell me about your business, ambitions and what is calling you to act today. Together, we will identify
+        the most appropriate, realistic and meaningful way forward.
+      </p>
+<div class="contact-actions">
+<a class="btn btn-outline whatsapp-inline" href="https://wa.me/261378502796?text=Bonjour%20Valiha,%20je%20vous%20contacte%20depuis%20votre%20site%20KAIROS." rel="noopener" target="_blank">
+<span class="wa-dot">✆</span>
+<span data-lang="fr">Écrire sur WhatsApp</span><span data-lang="en">Chat on WhatsApp</span>
+</a>
+<a class="btn btn-outline linkedin-inline" href="https://www.linkedin.com/in/valiha-andonimaraina-consultante-tourisme-durable/" rel="noopener" target="_blank">
+<span class="linkedin-dot">in</span>
+<span data-lang="fr">Voir mon profil LinkedIn</span><span data-lang="en">View my LinkedIn profile</span>
+</a>
+</div>
+</div>
+<div class="form-card reveal-right">
+<form action="https://formsubmit.co/valihamananjara@gmail.com" class="form-grid" id="contactForm" method="POST">
+<input name="_subject" type="hidden" value="Nouvelle demande, Landing Page KAIROS"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input name="_autoresponse" type="hidden" value="Merci pour votre message. Votre demande a bien été reçue par KAIROS. Valiha vous répondra personnellement sous 48 heures ouvrées."/>
+<input id="selectedOffer" name="Offre souhaitée" type="hidden" value=""/>
+<input name="_honey" style="display:none" type="text"/>
+<div class="field">
+<label for="name"><span data-lang="fr">Nom et prénom</span><span data-lang="en">Full name</span></label>
+<input id="name" name="Nom et prénom" required="" type="text"/>
+</div>
+<div class="field">
+<label for="company"><span data-lang="fr">Entreprise</span><span data-lang="en">Company</span></label>
+<input id="company" name="Entreprise" required="" type="text"/>
+</div>
+<div class="field">
+<label for="role"><span data-lang="fr">Fonction</span><span data-lang="en">Role</span></label>
+<input id="role" name="Fonction" type="text"/>
+</div>
+<div class="field">
+<label for="email">Email</label>
+<input id="email" name="Email" required="" type="email"/>
+</div>
+<div class="field">
+<label for="phone"><span data-lang="fr">Téléphone / WhatsApp</span><span data-lang="en">Phone / WhatsApp</span></label>
+<input id="phone" name="Téléphone / WhatsApp" type="tel"/>
+</div>
+<div class="field">
+<label for="team"><span data-lang="fr">Nombre de collaborateurs</span><span data-lang="en">Number of employees</span></label>
+<input id="team" min="1" name="Nombre de collaborateurs" type="number"/>
+</div>
+<div class="field full">
+<label for="need"><span data-lang="fr">Votre besoin principal</span><span data-lang="en">Your main need</span></label>
+<select id="need" name="Besoin principal" required="">
+<option data-en="Select an option" data-fr="Sélectionnez une option" value="">Sélectionnez une option</option>
+<option value="Diagnostic &amp; Engagement">Diagnostic &amp; Engagement</option>
+<option value="Transformation IMPACT">Transformation IMPACT</option>
+<option value="Programme Catalyseur">Programme Catalyseur</option>
+<option value="Certification Travelife">Certification Travelife</option>
+<option value="Transformation durable">Transformation durable / Sustainability transformation</option>
+<option value="Autre besoin">Autre besoin / Other need</option>
+</select>
+</div>
+<div class="field full">
+<label for="maturity"><span data-lang="fr">Niveau d’avancement</span><span data-lang="en">Current stage</span></label>
+<select id="maturity" name="Niveau d’avancement">
+<option data-en="Select an option" data-fr="Sélectionnez une option" value="">Sélectionnez une option</option>
+<option value="Nous démarrons">Nous démarrons / We are starting</option>
+<option value="Démarche déjà engagée">Démarche déjà engagée / Existing approach</option>
+<option value="Préparation Travelife">Préparation Travelife / Preparing for Travelife</option>
+<option value="Déjà certifiés">Déjà certifiés / Already certified</option>
+</select>
+</div>
+<div class="field full">
+<label for="message"><span data-lang="fr">Parlez-moi de votre situation</span><span data-lang="en">Tell me about your situation</span></label>
+<textarea id="message" name="Message" placeholder="Votre contexte, vos objectifs et vos principaux enjeux…" required=""></textarea>
+</div>
+<div class="submit-row">
+<button class="btn btn-primary" type="submit">
+<span data-lang="fr">Demander mon diagnostic stratégique →</span>
+<span data-lang="en">Request my strategic assessment →</span>
+</button>
+</div>
+</form>
+<p class="form-micro">
+<span data-lang="fr">En envoyant ce formulaire, vous acceptez d’être recontacté(e) uniquement au sujet de votre demande.</span>
+<span data-lang="en">By submitting this form, you agree to be contacted only regarding your request.</span>
+</p>
+</div>
+</div>
+</section>
+</main>
+<div aria-hidden="true" aria-labelledby="empcoTitle" aria-modal="true" class="empco-dialog" id="empcoDialog" role="dialog">
+<div class="empco-backdrop" data-empco-close=""></div>
+<article class="empco-panel" tabindex="-1">
+<button aria-label="Fermer" class="empco-close" data-empco-close="" type="button">×</button>
+<header class="empco-hero">
+<div class="empco-hero-copy">
+<div class="empco-overline">
+<span data-lang="fr">Décryptage réglementaire</span>
+<span data-lang="en">Regulatory briefing</span>
+</div>
+<h2 data-lang="fr" id="empcoTitle">EmpCo : ce qui change pour le tourisme européen</h2>
+<h2 data-lang="en">EmpCo: what changes for European tourism</h2>
+<p data-lang="fr">
+          La directive européenne 2024/825, souvent appelée EmpCo, renforce la protection des consommateurs
+          contre le greenwashing. Elle exige des informations environnementales plus claires, plus fiables
+          et réellement vérifiables.
+        </p>
+<p data-lang="en">
+          European Directive 2024/825, often called EmpCo, strengthens consumer protection against greenwashing.
+          It requires environmental information to be clearer, more reliable and genuinely verifiable.
+        </p>
+</div>
+<div class="empco-date-seal">
+<span data-lang="fr">Application</span>
+<span data-lang="en">Application</span>
+<strong>27</strong>
+<b>SEPT. 2026</b>
+</div>
+</header>
+<div aria-label="Calendrier EmpCo" class="empco-timeline">
+<div class="empco-time">
+<span class="empco-time-dot"></span>
+<small>28.02.2024</small>
+<strong data-lang="fr">Directive adoptée</strong>
+<strong data-lang="en">Directive adopted</strong>
+</div>
+<div class="empco-time">
+<span class="empco-time-dot"></span>
+<small>27.03.2026</small>
+<strong data-lang="fr">Échéance de transposition</strong>
+<strong data-lang="en">Transposition deadline</strong>
+</div>
+<div class="empco-time active">
+<span class="empco-time-dot"></span>
+<small>27.09.2026</small>
+<strong data-lang="fr">Règles applicables</strong>
+<strong data-lang="en">Rules apply</strong>
+</div>
+</div>
+<section class="empco-section">
+<div class="empco-section-heading">
+<span>01</span>
+<div>
+<h3 data-lang="fr">Ce que la directive cherche à empêcher</h3>
+<h3 data-lang="en">What the Directive aims to prevent</h3>
+<p data-lang="fr">Les affirmations environnementales ne pourront plus reposer sur des formulations vagues ou une simple intention.</p>
+<p data-lang="en">Environmental claims can no longer rely on vague wording or intention alone.</p>
+</div>
+</div>
+<div class="empco-rule-grid">
+<article class="empco-rule">
+<div class="empco-rule-icon">✕</div>
+<h4 data-lang="fr">Les promesses trop générales</h4>
+<h4 data-lang="en">Overly generic claims</h4>
+<p data-lang="fr">
+            Des termes comme « écologique », « vert », « responsable » ou « durable » doivent être étayés
+            par une performance environnementale démontrable et pertinente.
+          </p>
+<p data-lang="en">
+            Terms such as “eco-friendly”, “green”, “responsible” or “sustainable” must be supported
+            by relevant, demonstrable environmental performance.
+          </p>
+</article>
+<article class="empco-rule">
+<div class="empco-rule-icon">✕</div>
+<h4 data-lang="fr">Les labels sans dispositif crédible</h4>
+<h4 data-lang="en">Labels without a credible scheme</h4>
+<p data-lang="fr">
+            Les labels de durabilité devront être établis par une autorité publique ou reposer sur
+            un système de certification répondant aux exigences de la directive.
+          </p>
+<p data-lang="en">
+            Sustainability labels must be established by a public authority or based on a certification
+            scheme that meets the Directive’s requirements.
+          </p>
+</article>
+<article class="empco-rule">
+<div class="empco-rule-icon">✕</div>
+<h4 data-lang="fr">Les objectifs futurs sans trajectoire vérifiable</h4>
+<h4 data-lang="en">Future goals without a verifiable pathway</h4>
+<p data-lang="fr">
+            Les engagements futurs devront s’appuyer sur des objectifs clairs, publics, mesurables,
+            assortis d’un plan de mise en œuvre et d’une vérification indépendante régulière.
+          </p>
+<p data-lang="en">
+            Future commitments must rely on clear, public and measurable targets, a delivery plan
+            and regular independent verification.
+          </p>
+</article>
+<article class="empco-rule">
+<div class="empco-rule-icon">✕</div>
+<h4 data-lang="fr">La neutralité climatique fondée sur la compensation</h4>
+<h4 data-lang="en">Climate neutrality based on offsetting</h4>
+<p data-lang="fr">
+            Une offre ne pourra pas être présentée comme neutre, réduite ou positive pour le climat
+            lorsque cette affirmation repose uniquement sur la compensation des émissions.
+          </p>
+<p data-lang="en">
+            An offer cannot be presented as climate-neutral, reduced or positive when the claim
+            is based solely on offsetting greenhouse gas emissions.
+          </p>
+</article>
+</div>
+</section>
+<section class="empco-section empco-tourism">
+<div class="empco-section-heading">
+<span>02</span>
+<div>
+<h3 data-lang="fr">Pourquoi le tourisme est directement concerné</h3>
+<h3 data-lang="en">Why tourism is directly concerned</h3>
+<p data-lang="fr">La règle s’applique aux pratiques commerciales destinées aux consommateurs européens, y compris la présentation des services.</p>
+<p data-lang="en">The rule applies to commercial practices directed at European consumers, including how services are presented.</p>
+</div>
+</div>
+<div class="empco-tourism-map">
+<div class="empco-channel">
+<span>WEB</span>
+<strong data-lang="fr">Sites et pages de vente</strong>
+<strong data-lang="en">Websites and sales pages</strong>
+</div>
+<div class="empco-channel">
+<span>B2B</span>
+<strong data-lang="fr">Brochures et contenus partenaires</strong>
+<strong data-lang="en">Brochures and partner content</strong>
+</div>
+<div class="empco-channel">
+<span>TRIP</span>
+<strong data-lang="fr">Circuits, hôtels et excursions</strong>
+<strong data-lang="en">Tours, hotels and excursions</strong>
+</div>
+<div class="empco-channel">
+<span>SOCIAL</span>
+<strong data-lang="fr">Réseaux sociaux et campagnes</strong>
+<strong data-lang="en">Social media and campaigns</strong>
+</div>
+</div>
+<div class="empco-example">
+<div>
+<small data-lang="fr">AVANT DE COMMUNIQUER</small>
+<small data-lang="en">BEFORE COMMUNICATING</small>
+<strong data-lang="fr">« Voyage responsable »</strong>
+<strong data-lang="en">“Responsible journey”</strong>
+</div>
+<span>→</span>
+<div>
+<small data-lang="fr">IL FAUDRA POUVOIR MONTRER</small>
+<small data-lang="en">YOU WILL NEED TO SHOW</small>
+<strong data-lang="fr">Les critères, les actions, les indicateurs et les preuves</strong>
+<strong data-lang="en">The criteria, actions, indicators and evidence</strong>
+</div>
+</div>
+</section>
+<section class="empco-section empco-madagascar">
+<div class="empco-section-heading">
+<span>03</span>
+<div>
+<h3 data-lang="fr">Ce que cela signifie pour un tour-opérateur malgache</h3>
+<h3 data-lang="en">What this means for a Malagasy tour operator</h3>
+</div>
+</div>
+<div class="empco-impact-grid">
+<article>
+<b>1</b>
+<h4 data-lang="fr">Vos partenaires européens seront plus exposés</h4>
+<h4 data-lang="en">Your European partners will face greater exposure</h4>
+<p data-lang="fr">
+            Les agences et tour-opérateurs qui vendent aux consommateurs européens devront sécuriser
+            les affirmations utilisées dans leurs offres. Ils demanderont donc davantage de preuves à leurs réceptifs.
+          </p>
+<p data-lang="en">
+            Agencies and tour operators selling to European consumers will need to secure the claims used
+            in their offers. They are therefore likely to request stronger evidence from destination partners.
+          </p>
+</article>
+<article>
+<b>2</b>
+<h4 data-lang="fr">Votre documentation devient stratégique</h4>
+<h4 data-lang="en">Your documentation becomes strategic</h4>
+<p data-lang="fr">
+            Contrats, politiques, questionnaires fournisseurs, indicateurs, audits, formations et preuves terrain
+            permettront de justifier les engagements communiqués.
+          </p>
+<p data-lang="en">
+            Contracts, policies, supplier questionnaires, indicators, audits, training and field evidence
+            will help substantiate communicated commitments.
+          </p>
+</article>
+<article>
+<b>3</b>
+<h4 data-lang="fr">La certification peut renforcer la crédibilité</h4>
+<h4 data-lang="en">Certification can strengthen credibility</h4>
+<p data-lang="fr">
+            Une certification indépendante et reconnue peut structurer la démarche et sécuriser une partie
+            des preuves, mais elle ne remplace pas la cohérence entre les messages et la réalité opérationnelle.
+          </p>
+<p data-lang="en">
+            Independent, recognized certification can structure the approach and support evidence,
+            but it does not replace consistency between communication and operational reality.
+          </p>
+</article>
+</div>
+</section>
+<footer class="empco-footer">
+<div class="empco-next-step">
+<span class="empco-next-icon">✓</span>
+<div>
+<strong data-lang="fr">Le bon réflexe dès maintenant</strong>
+<strong data-lang="en">The right action now</strong>
+<p data-lang="fr">
+            Inventorier vos allégations environnementales, identifier les preuves disponibles et combler les écarts
+            avant que vos partenaires ne vous les demandent dans l’urgence.
+          </p>
+<p data-lang="en">
+            Inventory your environmental claims, identify available evidence and close the gaps
+            before partners request them under pressure.
+          </p>
+</div>
+</div>
+<div class="empco-footer-actions">
+<a class="empco-official-link" href="https://eur-lex.europa.eu/eli/dir/2024/825/oj/fra" rel="noopener" target="_blank">
+<span data-lang="fr">Consulter le texte officiel</span>
+<span data-lang="en">View the official text</span>
+          ↗
+        </a>
+<a class="btn btn-primary empco-contact" data-empco-close="" href="#contact">
+<span data-lang="fr">Préparer mon entreprise avec KAIROS</span>
+<span data-lang="en">Prepare my business with KAIROS</span>
+</a>
+</div>
+<p class="empco-disclaimer" data-lang="fr">
+        Cette présentation fournit une information générale et ne constitue pas un avis juridique.
+        L’application précise dépendra notamment des textes nationaux de transposition et du mode de commercialisation.
+      </p>
+<p class="empco-disclaimer" data-lang="en">
+        This presentation provides general information and is not legal advice.
+        Precise application will depend in particular on national transposition and the way services are marketed.
+      </p>
+</footer>
+</article>
+</div>
+<footer>
+<div class="footer-inner">
+<div class="footer-logo"><img alt="KAIROS" decoding="async" fetchpriority="high" height="360" loading="eager" src="assets/images/kairos-logo.png" width="900"/></div>
+<div class="footer-contact-links">
+<a href="mailto:valihamananjara@gmail.com">valihamananjara@gmail.com · Madagascar</a>
+<a class="footer-linkedin" href="https://www.linkedin.com/in/valiha-andonimaraina-consultante-tourisme-durable/" rel="noopener" target="_blank">
+<span class="footer-linkedin-mark">in</span>
+        LinkedIn
+      </a>
+</div>
+</div>
+</footer>
+<a aria-label="Contacter KAIROS sur WhatsApp" class="whatsapp-float" href="https://wa.me/261378502796?text=Bonjour%20Valiha,%20je%20vous%20contacte%20depuis%20votre%20site%20KAIROS." rel="noopener" target="_blank">
+<span class="whatsapp-icon">✆</span>
+<span class="whatsapp-label">WhatsApp</span>
+</a>
+<script>
+const body = document.body;
+const nav = document.getElementById('mainNav');
+const progress = document.getElementById('scrollProgress');
+const menu = document.getElementById('mobileMenu');
+const menuBtn = document.getElementById('menuBtn');
+const needSelect = document.getElementById('need');
+const messageField = document.getElementById('message');
+const selectedOffer = document.getElementById('selectedOffer');
+
+function setLanguage(lang) {
+  body.classList.toggle('lang-fr', lang === 'fr');
+  body.classList.toggle('lang-en', lang === 'en');
+  document.documentElement.lang = lang;
+  localStorage.setItem('kairos-lang', lang);
+
+  document.querySelectorAll('[data-set-lang]').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.setLang === lang);
+  });
+
+  document.querySelectorAll('option[data-fr]').forEach(option => {
+    option.textContent = lang === 'fr' ? option.dataset.fr : option.dataset.en;
+  });
+
+  messageField.placeholder = lang === 'fr'
+    ? 'Votre contexte, vos objectifs et vos principaux enjeux…'
+    : 'Your context, objectives and main challenges…';
+
+  document.title = lang === 'fr'
+    ? 'KAIROS | Faire du voyage une force du bien'
+    : 'KAIROS | Make travel a force for good';
+}
+
+document.querySelectorAll('[data-set-lang]').forEach(btn => {
+  btn.addEventListener('click', () => setLanguage(btn.dataset.setLang));
+});
+setLanguage(localStorage.getItem('kairos-lang') === 'en' ? 'en' : 'fr');
+
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.width = (max ? (window.scrollY / max) * 100 : 0) + '%';
+});
+
+menuBtn.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  body.classList.toggle('menu-open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.textContent = open ? '✕' : '☰';
+});
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('open');
+    body.classList.remove('menu-open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.textContent = '☰';
+  });
+});
+
+// Scroll reveals
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-clip').forEach(el => revealObserver.observe(el));
+
+// Offer tabs
+const tabs = [...document.querySelectorAll('[data-offer-tab]')];
+const panels = [...document.querySelectorAll('[data-offer-panel]')];
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const index = tab.dataset.offerTab;
+    tabs.forEach(t => t.classList.toggle('active', t === tab));
+    panels.forEach(p => p.classList.toggle('active', p.dataset.offerPanel === index));
+  });
+});
+
+// Offer CTAs prefill the form and scroll to it
+document.querySelectorAll('.offer-contact').forEach(button => {
+  button.addEventListener('click', () => {
+    const offer = button.dataset.offerName;
+    selectedOffer.value = offer;
+    if ([...needSelect.options].some(o => o.value === offer)) needSelect.value = offer;
+    const lang = body.classList.contains('lang-en') ? 'en' : 'fr';
+    messageField.value = lang === 'fr'
+      ? `Je souhaite en savoir plus sur l’accompagnement « ${offer} ».`
+      : `I would like to learn more about the “${offer}” program.`;
+    document.getElementById('contact').scrollIntoView({ behavior:'smooth' });
+    setTimeout(() => messageField.focus({preventScroll:true}), 700);
+  });
+});
+
+// Spotlight effect on pricing cards
+document.querySelectorAll('.spotlight').forEach(card => {
+  card.addEventListener('pointermove', event => {
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+    card.style.setProperty('--my', `${event.clientY - rect.top}px`);
+  });
+});
+
+// Very light hero parallax
+const heroVisual = document.getElementById('heroVisual');
+const heroPhoto = document.getElementById('heroPhoto');
+if (window.matchMedia('(pointer:fine)').matches) {
+  heroVisual.addEventListener('pointermove', event => {
+    const rect = heroVisual.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - .5;
+    const y = (event.clientY - rect.top) / rect.height - .5;
+    heroPhoto.style.transform = `rotateY(${x * 4}deg) rotateX(${-y * 4}deg) translate3d(${x * 4}px,${y * 4}px,0)`;
+  });
+  heroVisual.addEventListener('pointerleave', () => {
+    heroPhoto.style.transform = 'rotateY(0) rotateX(0) translate3d(0,0,0)';
+  });
+}
+</script>
+<script id="kairos-v4-cursor-glow">
+const globalGlow = document.getElementById('globalGlow');
+window.addEventListener('pointermove', (event) => {
+  if (!globalGlow) return;
+  globalGlow.style.left = event.clientX + 'px';
+  globalGlow.style.top = event.clientY + 'px';
+});
+window.addEventListener('pointerdown', () => {
+  if (!globalGlow) return;
+  globalGlow.style.opacity = '.34';
+  setTimeout(() => globalGlow.style.opacity = '.24', 140);
+});
+</script>
+<script id="empco-brief-script">
+(() => {
+  const dialog = document.getElementById('empcoDialog');
+  const openButton = document.getElementById('empcoOpen');
+  const panel = dialog?.querySelector('.empco-panel');
+  let previousFocus = null;
+
+  const openEmpco = () => {
+    if (!dialog) return;
+    previousFocus = document.activeElement;
+    dialog.classList.add('open');
+    dialog.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('empco-open');
+    requestAnimationFrame(() => panel?.focus());
+  };
+
+  const closeEmpco = () => {
+    if (!dialog) return;
+    dialog.classList.remove('open');
+    dialog.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('empco-open');
+    previousFocus?.focus?.();
+  };
+
+  openButton?.addEventListener('click', openEmpco);
+  dialog?.querySelectorAll('[data-empco-close]').forEach(element => {
+    element.addEventListener('click', closeEmpco);
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && dialog?.classList.contains('open')) closeEmpco();
+  });
+})();
+</script>
+<script id="kairos-v8-motion-script">
+(() => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer = window.matchMedia('(pointer: fine)').matches;
+
+  window.addEventListener('load', () => {
+    document.body.classList.add('page-loaded');
+  }, { once:true });
+
+  // Assign stagger indices to dynamic collections.
+  const staggerSelectors = [
+    '.context-grid .context-card',
+    '.approach-grid .approach-card',
+    '.plan-grid .plan-step',
+    '.success-grid .success-card',
+    '.ecosystem-orbit .eco-node',
+    '.empco-rule-grid .empco-rule',
+    '.empco-impact-grid article'
+  ];
+
+  staggerSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach((element, index) => {
+      element.style.setProperty('--stagger', index);
+    });
+  });
+
+  if (reducedMotion || !finePointer) return;
+
+  // Subtle 3D tilt on selected cards.
+  const tiltElements = document.querySelectorAll(
+    '.approach-card,.success-card,.eco-node,.empco-rule,.empco-impact-grid article'
+  );
+
+  tiltElements.forEach(element => {
+    element.setAttribute('data-tilt-live', '');
+
+    element.addEventListener('pointermove', event => {
+      const rect = element.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - .5;
+      const y = (event.clientY - rect.top) / rect.height - .5;
+      const rotateY = x * 5;
+      const rotateX = y * -5;
+
+      element.style.transform =
+        `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+    });
+
+    element.addEventListener('pointerleave', () => {
+      element.style.transform = '';
+    });
+  });
+
+  // Magnetic movement for high-value calls to action.
+  const magneticElements = document.querySelectorAll(
+    '.btn,.offer-cta,.empco-trigger,.nav-cta,.linkedin-inline,.whatsapp-inline'
+  );
+
+  magneticElements.forEach(element => {
+    element.addEventListener('pointermove', event => {
+      const rect = element.getBoundingClientRect();
+      const x = event.clientX - rect.left - rect.width / 2;
+      const y = event.clientY - rect.top - rect.height / 2;
+      element.style.transform = `translate3d(${x * .065}px,${y * .1}px,0)`;
+    });
+
+    element.addEventListener('pointerleave', () => {
+      element.style.transform = '';
+    });
+  });
+
+  // Gentle depth shift for the hero and ambient elements while scrolling.
+  let ticking = false;
+  const updateDepth = () => {
+    const scrollY = window.scrollY;
+    const hero = document.querySelector('.hero');
+    const visual = document.querySelector('.hero-visual');
+    const identity = document.querySelector('.identity-card');
+
+    if (hero && scrollY < window.innerHeight * 1.2) {
+      hero.style.setProperty('--hero-scroll', scrollY);
+      if (visual) visual.style.translate = `0 ${scrollY * .035}px`;
+      if (identity) identity.style.translate = `0 ${scrollY * -.018}px`;
+    }
+
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateDepth);
+      ticking = true;
+    }
+  }, { passive:true });
+})();
+</script>
+</body>
+</html>
